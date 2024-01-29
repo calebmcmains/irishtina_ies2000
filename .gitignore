@@ -1,12 +1,9 @@
-/node_modules
-/miscellaneousfiles
-/seeds
 /.vscode
 /.eslintrc.json
 /.prettierignore
-/_site
 /.timetracker
-
+node_modules/
+_site/
 
 # Created by https://www.toptal.com/developers/gitignore/api/macos,node,dotenv
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,node,dotenv

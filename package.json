@@ -1,0 +1,24 @@
+{
+  "name": "ies2000",
+  "version": "1.0.0",
+  "description": "IES 2000 Website",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx eleventy",
+    "dev": "npx eleventy --serve",
+    "dev:tailwind": "tailwindcss -i ./src/_includes/css/global.css -o global.out.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "acoustic",
+    "engineering"
+  ],
+  "author": "Caleb McMains",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "prettier": "^3.2.4",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1"
+  }
+}

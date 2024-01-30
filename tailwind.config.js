@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{html,njk}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        iesGreen: "#39b54a",
+        "iesGreen-light": "#61c46e",
+      },
+    },
   },
   plugins: [],
 };

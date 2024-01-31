@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         iesGreen: "#39b54a",
         "iesGreen-light": "#61c46e",
+        "iesGreen-lightest": "#ebf8ed",
       },
     },
   },

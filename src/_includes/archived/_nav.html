@@ -1,0 +1,180 @@
+<!-- <nav class="navbar navbar-expand-md bg-client-yellow">
+  <div class="flex">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="flex gap-3">
+        <li class="">
+          <a class="nav-link" href="">Electrical Services</a>
+        </li>
+        <li class="nav-item fw-bold">
+          <a class="nav-link" href="service-area">Service Area</a>
+        </li>
+        <li class="nav-item fw-bold">
+          <a class="nav-link" href="free-estimate">Free Estimate</a>
+        </li>
+        <li class="nav-item fw-bold">
+          <a class="nav-link" href="reviews">Reviews</a>
+        </li>
+        <li class="nav-item fw-bold">
+          <a class="nav-link" href="about-us">About Us</a>
+        </li>
+        <li class="nav-item fw-bold">
+          <a class="nav-link" href="/contact-us">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+<nav class="relative max-w-full bg-neutral-100 p-5">
+  <div class="m-auto flex max-w-screen-2xl items-center justify-between">
+    <div>
+      <img src="/public/images/logo-ies.svg" alt="ies2000 logo" />
+    </div>
+
+    <!-- mobile menu icon -->
+    <button
+      type="button"
+      class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+      aria-controls="mobile-menu"
+      aria-expanded="false"
+    >
+      <span class="absolute -inset-0.5"></span>
+      <span class="sr-only">Open main menu</span>
+      <!--
+        Icon when menu is closed.
+
+        Menu open: "hidden", Menu closed: "block"
+      -->
+      <svg
+        class="block h-12 w-12 md:hidden"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+      <!--
+        Icon when menu is open.
+
+        Menu open: "block", Menu closed: "hidden"
+      -->
+      <svg
+        class="hidden h-12 w-12"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+
+    <div class="hidden md:flex md:flex-col md:items-end md:gap-8">
+      <div class="flex gap-3 text-sm">
+        <span
+          >Phone:
+          <a class="underline" href="tel:+18772488640">(877) 248-8640</a></span
+        >
+        <span>|</span>
+        <span>Fax: (937) 663-0678</span>
+        <span>|</span>
+        <span
+          ><a class="underline" href="mailto:info@ies2000.com"
+            >info@ies2000.com</a
+          ></span
+        >
+      </div>
+      <div class="font-semibold">
+        <ul class="flex gap-8">
+          <li>
+            <a class="hover:underline hover:underline-offset-4" href="">Home</a>
+          </li>
+          <li>
+            <a class="hover:underline hover:underline-offset-4" href=""
+              >Products & Services</a
+            >
+          </li>
+          <li>
+            <a class="hover:underline hover:underline-offset-4" href=""
+              >By Application</a
+            >
+          </li>
+          <li>
+            <a class="hover:underline hover:underline-offset-4" href=""
+              >Company</a
+            >
+          </li>
+          <li>
+            <a class="hover:underline hover:underline-offset-4" href=""
+              >Resources</a
+            >
+          </li>
+          <li>
+            <a
+              class="rounded-full bg-iesGreen px-6 py-3 text-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+              href=""
+              >Request a Quote</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="absolute right-0 top-24 z-50 w-4/5 bg-neutral-500 font-semibold md:hidden"
+  >
+    <!-- <div class="fixed bottom-0 left-0 right-0 top-0 bg-slate-500 flex"></div> -->
+    <ul class="flex flex-col gap-6 py-12 pl-12">
+      <li>
+        <a class="hover:underline hover:underline-offset-4" href="">Home</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:underline-offset-4" href=""
+          >Products & Services</a
+        >
+      </li>
+      <li>
+        <a class="hover:underline hover:underline-offset-4" href=""
+          >By Application</a
+        >
+      </li>
+      <li>
+        <a class="hover:underline hover:underline-offset-4" href="">Company</a>
+      </li>
+      <li>
+        <a class="hover:underline hover:underline-offset-4" href=""
+          >Resources</a
+        >
+      </li>
+      <li>
+        <a
+          class="rounded-full bg-iesGreen px-6 py-3 text-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+          href=""
+          >Request a Quote</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

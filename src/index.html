@@ -1,11 +1,280 @@
 {% extends 'layouts/base.html' %} {% set title = "IES2000 Home" %} {% set
 description = "" %} {% block content %}
-<div
-  class="flex min-h-screen flex-col items-center justify-center gap-4 bg-neutral-100"
+
+<section
+  class="bg-hero-image relative flex h-[700px] items-center bg-cover bg-center bg-no-repeat"
 >
-  <h1 class="text-5xl font-bold uppercase">Future Site of IES 2000</h1>
-  <h2 class="text-2xl font-semibold">
-    Designed and Developed with you in mind.
-  </h2>
-</div>
+  <div
+    class="absolute bottom-0 left-0 right-0 top-0 -z-0 bg-gradient-to-r from-black to-transparent"
+  ></div>
+  <div class="container z-[1] m-auto px-10">
+    <div class="bg-opacity-30 px-10 py-24 text-center xl:text-left">
+      <div class="w-full xl:w-1/2">
+        <h1
+          class="text-slightly-white mb-8 text-5xl font-bold leading-none tracking-wide"
+        >
+          Acoustic Engineering Services
+        </h1>
+        <p class="text-slightly-white mb-8">
+          <!-- Whether your workplace is a heavy industrial facility or a corporate
+          office, excessive noise can be dangerous and distracting. At IES-2000,
+          LLC we provide acoustical engineering services that help create a
+          comfortable working environment. We have experienced noise control and
+          acoustical engineering consultants that understand the challenges of
+          achieving an acoustic environment by providing acoustical engineering
+          services that enhance safety and improve productivity. To solve any
+          noise issue, you should first understand the basics of how sound
+          works. Our acoustic consultants can assist you in managing and
+          controlling noise and vibration in your warehouse, workplace, and
+          other environments. -->
+          Experience unparalleled excellence in acoustic engineering services as
+          we harmonize innovation and precision to create optimal sound
+          environments tailored to your unique needs.
+        </p>
+        <a
+          class="text-slightly-white rounded-full bg-iesGreen px-6 py-3 transition-all duration-200 ease-out hover:bg-iesGreen-light"
+          href="/contact-us"
+          >Request a Quote</a
+        >
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-slightly-white py-24">
+  <div class="container m-auto mb-24 px-10 md:text-center">
+    <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
+      >Controlling Sound</span
+    >
+    <h2 class="text-4xl font-bold text-neutral-700">
+      Understanding the 3 ways we make sound work for you
+    </h2>
+  </div>
+  <div
+    class="container m-auto grid w-auto grid-cols-1 gap-16 px-10 md:w-2/3 xl:w-1/3"
+  >
+    <div>
+      <p class="mb-2 text-7xl font-bold text-iesGreen opacity-50">01</p>
+      <h3 class="mb-6 text-3xl font-bold text-neutral-700">
+        Source / Receiver
+      </h3>
+      <p class="text-neutral-600">
+        Develop solution to reduce the noise being propagated from the source
+        (most effective) or at the receiver. These solutions can range from
+        barrier walls to enclosures.
+      </p>
+    </div>
+
+    <div>
+      <p class="mb-2 text-7xl font-bold text-iesGreen opacity-50">02</p>
+      <h3 class="mb-6 text-3xl font-bold text-neutral-700">Path</h3>
+      <p class="text-neutral-600">
+        Typically implementing a solution of this type will isolate a noisy area
+        of a facility from the quieter area of the plant to mitigate noise
+        exposures of the employees in the quieter areas.
+      </p>
+    </div>
+
+    <div>
+      <p class="mb-2 text-7xl font-bold text-iesGreen opacity-50">03</p>
+      <h3 class="mb-6 text-3xl font-bold text-neutral-700">Room Acoustics</h3>
+      <p class="text-neutral-600">
+        Is typically utilized in situations where areas of facilities that are
+        very reverberant and need absorption panels/baffles to reduce the
+        reverberant sound. Typically, acoustical engineers will run calculations
+        to determine the amount of absorption necessary in the space to maximize
+        the effectiveness of the sound absorption panels.
+      </p>
+    </div>
+  </div>
+</section>
+<section class="bg-iesGreen-lightest py-24">
+  <div class="container m-auto mb-24 px-10">
+    <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
+      >Featured Products</span
+    >
+    <h2 class="text-4xl font-bold text-neutral-700">
+      Designed to redefine sound experiences.
+    </h2>
+  </div>
+  <div
+    class="container m-auto grid grid-cols-1 gap-12 px-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"
+  >
+    <div
+      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+    >
+      <img
+        src="/public/images/ies2000_acoustic_window.jpeg"
+        alt=""
+        class="mb-4 h-48 w-full rounded-lg object-cover"
+      />
+      <h3 class="mb-2 text-2xl font-bold text-neutral-700">Acoustic Windows</h3>
+      <p class="text-neutral-600">
+        The Acousti – Window is completely factory assembled including the
+        installation of liner panels (powder-coated perforated steel of fabric),
+        glazing and glass stops. The result is an acoustic window that leaves
+        the factory truly ready to install.
+      </p>
+    </div>
+    <div
+      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+    >
+      <img
+        src="/public/images/ies2000_acoustic_enclosure.jpeg"
+        alt=""
+        class="mb-4 h-48 w-full rounded-lg object-cover"
+      />
+      <h3 class="mb-2 text-2xl font-bold text-neutral-700">
+        Acoustic Enclosures
+      </h3>
+      <p class="text-neutral-600">
+        Our standard Acoustical/Thermal Panels are fabricated with an 18 gauge
+        G90 galvanized solid steel outer skin, and 16 gauge galvanized solid
+        steel channel frames filled with mineral-glass fiber acoustic/thermal
+        fill.
+      </p>
+    </div>
+    <div
+      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+    >
+      <img
+        src="/public/images/ies2000_industrial_noise_control.jpeg"
+        alt=""
+        class="mb-4 h-48 w-full rounded-lg object-cover"
+      />
+      <h3 class="mb-2 text-2xl font-bold text-neutral-700">
+        Industrial Noise Control
+      </h3>
+      <p class="text-neutral-600">
+        IES-2000 provides industrial noise control solutions to reduce excessive
+        sound and vibrations in facilities across the manufacturing spectrum.
+      </p>
+    </div>
+    <div
+      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+    >
+      <img
+        src="/public/images/ies2000_architectural_sound.jpeg"
+        alt=""
+        class="mb-4 h-48 w-full rounded-lg object-cover"
+      />
+      <h3 class="mb-2 text-2xl font-bold text-neutral-700">
+        Architectural Sound Products
+      </h3>
+      <p class="text-neutral-600">
+        IES-2000 provides a full range of architectural sound products designed
+        to create acoustically balanced indoor and outdoor spaces.
+      </p>
+    </div>
+    <div
+      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+    >
+      <img
+        src="/public/images/ies2000_outdoor_indoor_construction_noise_control.jpeg"
+        alt=""
+        class="mb-4 h-48 w-full rounded-lg object-cover"
+      />
+      <h3 class="mb-2 text-2xl font-bold text-neutral-700">
+        Outdoor / Construction Noise Control
+      </h3>
+      <p class="text-neutral-600">
+        IES-2000 offers a wide range of noise-control products that reduce noise
+        pollution in outdoor construction operations.
+      </p>
+    </div>
+  </div>
+  <div class="container m-auto mt-16 flex items-center justify-center px-10">
+    <a
+      class="hover:text-slightly-white w-full rounded-full border-2 border-iesGreen px-6 py-3 text-center text-iesGreen transition-all duration-200 ease-out hover:bg-iesGreen lg:w-auto"
+      href="/products-services"
+      >All Products</a
+    >
+  </div>
+</section>
+<section class="bg-slightly-white py-24">
+  <div class="container m-auto mb-24 px-10 md:text-center">
+    <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
+      >Service</span
+    >
+    <h2 class="text-4xl font-bold">Solutions for every industry</h2>
+  </div>
+  <div
+    class="container m-auto grid grid-cols-1 items-start justify-center gap-12 px-10 md:grid-cols-3"
+  >
+    <div
+      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+    >
+      <div class="h-20 w-20">
+        <svg
+          class="h-20 w-20"
+          fill="#404040"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="m26.9 12.2-3-4a.5.5 0 0 0-.4-.2h-8.793l-3.853-3.854h-.006a.542.542 0 0 0-.534-.107l-4.994 2A.5.5 0 0 0 5 6.5v8a.5.5 0 0 0 1 0V13h4v14H6.5a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1H15V13h7v4.5a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1-1.5 1.5.5.5 0 0 0-1 0 2.5 2.5 0 1 0 3-2.45V13h3.5a.5.5 0 0 0 .4-.8zM11 5.707 13.293 8H11zm-1-.469V8H6V6.839zM14 23.5l-2.666-2 2.666-2zm-3-3v-4l2.666 2zm2.666 4L11 26.5v-4zm-2.332-9 2.666-2v4zm-.334-1V13h2zM12 27l2-1.5V27zm2.5-15H6V9h17.25l2.25 3z"
+          />
+        </svg>
+      </div>
+      <h3 class="mb-2 text-2xl font-bold">Construction</h3>
+      <p class="text-neutral-600">
+        IES-2000 offers a wide range of noise-control products that reduce noise
+        pollution in outdoor construction operations. We carefully design each
+        of our outdoor construction soundproofing and noise-control products to
+        help customers meet their noise-control goals. Our focus on customer
+        service ensures that our clients have support throughout the entire
+        project to keep all processes running smoothly.
+      </p>
+    </div>
+    <div
+      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+    >
+      <div class="h-20 w-20">
+        <svg
+          class="h-16 w-16"
+          fill="#404040"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 48 48"
+        >
+          <circle cx="22.97" cy="11" r="2" />
+          <path d="M14.42 33.83a1 1 0 1 0 0-1.66 1 1 0 0 0 0 1.66z" />
+          <path
+            d="M37 25h-1a1 1 0 0 0-2 0h-2.21C28.41 14 29 17.11 29 11a6 6 0 0 0-3-5.19V3a3 3 0 0 0-6 0v2.81A6 6 0 0 0 17 11v4.85L12.72 29.7a4 4 0 0 0-1.47 4.74l-.95 3.11a6.09 6.09 0 0 0 2.39 6.84L12 46.72a1 1 0 0 0 1.92.56l3.18-10.91a3.94 3.94 0 0 0 1.47-5.08L19.82 27h6.31C32.57 49.19 32 48 33 48a1 1 0 0 0 1-1.28l-.67-2.31a6.12 6.12 0 0 0 2.39-6.86L32.4 27H34a1 1 0 0 0 2 0h1a1 1 0 0 0 0-2zm-7.3 0h-2.07l-2.32-8h1.93zM22 3a1 1 0 0 1 1.72-.69c.38.37.28.63.28 2.78a5.6 5.6 0 0 0-2 0zm-3 8a4 4 0 0 1 8 0v4h-8zm-2 18.57a3.8 3.8 0 0 0-2-.57l3.69-12h1.93zM13 33a2 2 0 1 1 2 2 2 2 0 0 1-2-2zm-.2 3.33a4 4 0 0 0 2.07.66l-1.55 5.32c-2.05-1.94-1.15-4.03-.55-5.98zM20.4 25l2.32-8h.5l2.33 8zm13.34 13.14a4.12 4.12 0 0 1-1.08 4.19L28.21 27h2.1z"
+          />
+        </svg>
+      </div>
+      <h3 class="mb-2 text-2xl font-bold">Architechure</h3>
+      <p class="text-neutral-600">
+        IES-2000 provides a full range of architectural sound products designed
+        to create acoustically balanced indoor and outdoor spaces. Our products
+        see wide use in the construction and architectural acoustic design
+        fields, and architects across America rely on us to create quality sound
+        solutions for a variety of projects.
+      </p>
+    </div>
+    <div
+      class="hover:scale-1025 relative transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+    >
+      <div class="h-20 w-20">
+        <svg
+          class="h-16 w-16"
+          fill="#404040"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M22 1h-4a1 1 0 0 0-1 1v7h-2V7a1 1 0 0 0-1.447-.895L9 8.382V7a1 1 0 0 0-1.447-.895l-6 3A1 1 0 0 0 1 10v12a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm-1 2v2h-2V3zM3 21V10.618l4-2V10a1 1 0 0 0 1.447.895L13 8.618V10a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1V7h2v14zm2-8h3v2H5zm5 0h4v2h-4zm6 0h3v2h-3zM5 17h3v2H5zm5 0h4v2h-4zm6 0h3v2h-3z"
+          />
+        </svg>
+      </div>
+      <h3 class="mb-2 text-2xl font-bold text-neutral-700">Industrial</h3>
+      <p class="text-neutral-600">
+        IES-2000 provides industrial noise control & reduction solutions for
+        excessive sound and vibrations in facilities across the manufacturing
+        spectrum. Our industrial noise reduction products have a proven track
+        record of success, meeting customer defined goals in industries
+        including:
+      </p>
+    </div>
+  </div>
+</section>
 {% endblock %}

@@ -2,7 +2,7 @@
 description = "" %} {% block content %}
 
 <section
-  class="bg-hero-image relative flex h-[700px] items-center bg-cover bg-center bg-no-repeat"
+  class="relative flex h-[700px] items-center bg-hero-image bg-cover bg-center bg-no-repeat"
 >
   <div
     class="absolute bottom-0 left-0 right-0 top-0 -z-0 bg-gradient-to-r from-black to-transparent"
@@ -11,11 +11,11 @@ description = "" %} {% block content %}
     <div class="bg-opacity-30 px-10 py-24 text-center xl:text-left">
       <div class="w-full xl:w-1/2">
         <h1
-          class="text-slightly-white mb-8 text-5xl font-bold leading-none tracking-wide"
+          class="mb-8 text-5xl font-bold leading-none tracking-wide text-slightly-white"
         >
           Acoustic Engineering Services
         </h1>
-        <p class="text-slightly-white mb-8">
+        <p class="mb-8 text-slightly-white">
           <!-- Whether your workplace is a heavy industrial facility or a corporate
           office, excessive noise can be dangerous and distracting. At IES-2000,
           LLC we provide acoustical engineering services that help create a
@@ -32,7 +32,7 @@ description = "" %} {% block content %}
           environments tailored to your unique needs.
         </p>
         <a
-          class="text-slightly-white rounded-full bg-iesGreen px-6 py-3 transition-all duration-200 ease-out hover:bg-iesGreen-light"
+          class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
           href="/contact-us"
           >Request a Quote</a
         >
@@ -100,23 +100,7 @@ description = "" %} {% block content %}
     class="container m-auto grid grid-cols-1 gap-12 px-10 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"
   >
     <div
-      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
-    >
-      <img
-        src="/public/images/ies2000_acoustic_window.jpeg"
-        alt=""
-        class="mb-4 h-48 w-full rounded-lg object-cover"
-      />
-      <h3 class="mb-2 text-2xl font-bold text-neutral-700">Acoustic Windows</h3>
-      <p class="text-neutral-600">
-        The Acousti – Window is completely factory assembled including the
-        installation of liner panels (powder-coated perforated steel of fabric),
-        glazing and glass stops. The result is an acoustic window that leaves
-        the factory truly ready to install.
-      </p>
-    </div>
-    <div
-      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+      class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
         src="/public/images/ies2000_acoustic_enclosure.jpeg"
@@ -134,23 +118,24 @@ description = "" %} {% block content %}
       </p>
     </div>
     <div
-      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+      class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
-        src="/public/images/ies2000_industrial_noise_control.jpeg"
+        src="/public/images/ies2000_acoustic_window.jpeg"
         alt=""
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
-      <h3 class="mb-2 text-2xl font-bold text-neutral-700">
-        Industrial Noise Control
-      </h3>
+      <h3 class="mb-2 text-2xl font-bold text-neutral-700">Acoustic Windows</h3>
       <p class="text-neutral-600">
-        IES-2000 provides industrial noise control solutions to reduce excessive
-        sound and vibrations in facilities across the manufacturing spectrum.
+        The Acousti – Window is completely factory assembled including the
+        installation of liner panels (powder-coated perforated steel of fabric),
+        glazing and glass stops. The result is an acoustic window that leaves
+        the factory truly ready to install.
       </p>
     </div>
+
     <div
-      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+      class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
         src="/public/images/ies2000_architectural_sound.jpeg"
@@ -158,15 +143,16 @@ description = "" %} {% block content %}
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
       <h3 class="mb-2 text-2xl font-bold text-neutral-700">
-        Architectural Sound Products
+        Architectural Sound & Acoustics
       </h3>
       <p class="text-neutral-600">
         IES-2000 provides a full range of architectural sound products designed
         to create acoustically balanced indoor and outdoor spaces.
       </p>
     </div>
+
     <div
-      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+      class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
         src="/public/images/ies2000_outdoor_indoor_construction_noise_control.jpeg"
@@ -174,17 +160,34 @@ description = "" %} {% block content %}
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
       <h3 class="mb-2 text-2xl font-bold text-neutral-700">
-        Outdoor / Construction Noise Control
+        Construction/Outdoor Noise Control & Reduction
       </h3>
       <p class="text-neutral-600">
         IES-2000 offers a wide range of noise-control products that reduce noise
         pollution in outdoor construction operations.
       </p>
     </div>
+
+    <div
+      class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
+    >
+      <img
+        src="/public/images/ies2000_industrial_noise_control.jpeg"
+        alt=""
+        class="mb-4 h-48 w-full rounded-lg object-cover"
+      />
+      <h3 class="mb-2 text-2xl font-bold text-neutral-700">
+        Industrial Noise Control & Reduction
+      </h3>
+      <p class="text-neutral-600">
+        IES-2000 provides industrial noise control solutions to reduce excessive
+        sound and vibrations in facilities across the manufacturing spectrum.
+      </p>
+    </div>
   </div>
   <div class="container m-auto mt-16 flex items-center justify-center px-10">
     <a
-      class="hover:text-slightly-white w-full rounded-full border-2 border-iesGreen px-6 py-3 text-center text-iesGreen transition-all duration-200 ease-out hover:bg-iesGreen lg:w-auto"
+      class="w-full rounded-full border-2 border-iesGreen px-6 py-3 text-center text-iesGreen transition-all duration-200 ease-out hover:bg-iesGreen hover:text-slightly-white lg:w-auto"
       href="/products-services"
       >All Products</a
     >
@@ -201,32 +204,7 @@ description = "" %} {% block content %}
     class="container m-auto grid grid-cols-1 items-start justify-center gap-12 px-10 md:grid-cols-3"
   >
     <div
-      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
-    >
-      <div class="h-20 w-20">
-        <svg
-          class="h-20 w-20"
-          fill="#404040"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 32 32"
-        >
-          <path
-            d="m26.9 12.2-3-4a.5.5 0 0 0-.4-.2h-8.793l-3.853-3.854h-.006a.542.542 0 0 0-.534-.107l-4.994 2A.5.5 0 0 0 5 6.5v8a.5.5 0 0 0 1 0V13h4v14H6.5a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1H15V13h7v4.5a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1-1.5 1.5.5.5 0 0 0-1 0 2.5 2.5 0 1 0 3-2.45V13h3.5a.5.5 0 0 0 .4-.8zM11 5.707 13.293 8H11zm-1-.469V8H6V6.839zM14 23.5l-2.666-2 2.666-2zm-3-3v-4l2.666 2zm2.666 4L11 26.5v-4zm-2.332-9 2.666-2v4zm-.334-1V13h2zM12 27l2-1.5V27zm2.5-15H6V9h17.25l2.25 3z"
-          />
-        </svg>
-      </div>
-      <h3 class="mb-2 text-2xl font-bold">Construction</h3>
-      <p class="text-neutral-600">
-        IES-2000 offers a wide range of noise-control products that reduce noise
-        pollution in outdoor construction operations. We carefully design each
-        of our outdoor construction soundproofing and noise-control products to
-        help customers meet their noise-control goals. Our focus on customer
-        service ensures that our clients have support throughout the entire
-        project to keep all processes running smoothly.
-      </p>
-    </div>
-    <div
-      class="hover:scale-1025 transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+      class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <div class="h-20 w-20">
         <svg
@@ -252,7 +230,33 @@ description = "" %} {% block content %}
       </p>
     </div>
     <div
-      class="hover:scale-1025 relative transform transition-all duration-200 ease-in-out hover:cursor-pointer"
+      class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
+    >
+      <div class="h-20 w-20">
+        <svg
+          class="h-20 w-20"
+          fill="#404040"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+        >
+          <path
+            d="m26.9 12.2-3-4a.5.5 0 0 0-.4-.2h-8.793l-3.853-3.854h-.006a.542.542 0 0 0-.534-.107l-4.994 2A.5.5 0 0 0 5 6.5v8a.5.5 0 0 0 1 0V13h4v14H6.5a.5.5 0 0 0 0 1h12a.5.5 0 0 0 0-1H15V13h7v4.5a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1-1.5 1.5.5.5 0 0 0-1 0 2.5 2.5 0 1 0 3-2.45V13h3.5a.5.5 0 0 0 .4-.8zM11 5.707 13.293 8H11zm-1-.469V8H6V6.839zM14 23.5l-2.666-2 2.666-2zm-3-3v-4l2.666 2zm2.666 4L11 26.5v-4zm-2.332-9 2.666-2v4zm-.334-1V13h2zM12 27l2-1.5V27zm2.5-15H6V9h17.25l2.25 3z"
+          />
+        </svg>
+      </div>
+      <h3 class="mb-2 text-2xl font-bold">Construction</h3>
+      <p class="text-neutral-600">
+        IES-2000 offers a wide range of noise-control products that reduce noise
+        pollution in outdoor construction operations. We carefully design each
+        of our outdoor construction soundproofing and noise-control products to
+        help customers meet their noise-control goals. Our focus on customer
+        service ensures that our clients have support throughout the entire
+        project to keep all processes running smoothly.
+      </p>
+    </div>
+
+    <div
+      class="relative transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <div class="h-20 w-20">
         <svg

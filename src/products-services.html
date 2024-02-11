@@ -1,0 +1,48 @@
+{% extends 'layouts/base.html' %} {% set title = "IES2000 Product Services" %}
+{% set description = "" %} {% block content %}
+<section
+  class="relative flex h-[350px] items-center bg-hero-image bg-cover bg-center bg-no-repeat"
+>
+  <div
+    class="absolute bottom-0 left-0 right-0 top-0 -z-0 bg-gradient-to-r from-black to-transparent"
+  ></div>
+  <div class="container z-[1] m-auto px-10">
+    <div class="bg-opacity-30 py-24 text-center">
+      <div class="w-full">
+        <h1
+          class="mb-8 text-5xl font-bold leading-none tracking-wide text-slightly-white"
+        >
+          Products & Services
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-slightly-white py-24">
+  <div class="container mx-auto px-10">
+    <div class="container m-auto mb-24 px-10 md:text-center">
+      <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
+        >Your covered</span
+      >
+      <h2 class="text-4xl font-bold text-neutral-700">
+        We offer a wide variety of products & services to fit your needs
+      </h2>
+    </div>
+    <div
+      class="mx-auto mb-24 grid max-w-screen-xl grid-cols-1 items-center gap-8 md:grid-cols-2 xl:grid-cols-3"
+    >
+      {% include "_products-services-items-loop.html" %}
+    </div>
+    <div class="container m-auto px-10 md:text-center">
+      <h2 class="mb-8 text-4xl font-bold text-neutral-700">
+        Aren't sure which products & services you need?
+      </h2>
+      <a
+        class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+        href="/contact-us"
+        >Contact us</a
+      >
+    </div>
+  </div>
+</section>
+{% endblock %}

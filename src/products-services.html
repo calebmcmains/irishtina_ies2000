@@ -1,22 +1,10 @@
-{% extends 'layouts/base.html' %} {% set title = "IES2000 Product Services" %}
-{% set description = "" %} {% block content %}
+{% extends 'layouts/base.html' %} {% set title = "Products & Services" %} {% set
+pageTitle = "Products & Services" %} {% set description = "" %} {% block content
+%}
 <section
   class="relative flex h-[350px] items-center bg-hero-image bg-cover bg-center bg-no-repeat"
 >
-  <div
-    class="absolute bottom-0 left-0 right-0 top-0 -z-0 bg-gradient-to-r from-black to-transparent"
-  ></div>
-  <div class="container z-[1] m-auto px-10">
-    <div class="bg-opacity-30 py-24 text-center">
-      <div class="w-full">
-        <h1
-          class="mb-8 text-5xl font-bold leading-none tracking-wide text-slightly-white"
-        >
-          Products & Services
-        </h1>
-      </div>
-    </div>
-  </div>
+  {% include 'layouts/image-title.html' %}
 </section>
 <section class="bg-slightly-white py-24">
   <div class="container mx-auto px-10">

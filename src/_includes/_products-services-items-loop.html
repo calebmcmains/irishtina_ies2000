@@ -93,25 +93,24 @@
 %}
 
 {% for item in items %}
-<div
-  class="relative flex min-h-96 transform flex-col items-start gap-4 rounded-lg bg-iesGreen-lightest p-6 drop-shadow-sm transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
->
-  <img
-    src="/public/images/{{item.image}}"
-    alt=""
-    class="h-36 w-full rounded-lg object-cover"
-  />
-  <div class="flex flex-col">
-    <h3 class="mb-2 text-2xl font-bold text-neutral-700">{{item.title}}</h3>
-    <p class="line-clamp-3 text-neutral-600">{{item.description}}</p>
-  
-  </div>
-  <a class="mt-auto place-self-end" href="{{item.link}}">
-    <p class="text-right font-semibold uppercase text-iesGreen">
+<a class="" href="{{item.link}}">
+  <div
+    class="relative flex min-h-96 transform flex-col items-start gap-4 rounded-lg bg-iesGreen-lightest p-6 drop-shadow-sm transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
+  >
+    <img
+      src="/public/images/{{item.image}}"
+      alt=""
+      class="h-36 w-full rounded-lg object-cover"
+    />
+    <div class="flex flex-col">
+      <h3 class="mb-2 text-2xl font-bold text-neutral-700">{{item.title}}</h3>
+      <p class="line-clamp-3 text-neutral-600">{{item.description}}</p>
+    </div>
+    <p class="text-right font-semibold uppercase text-iesGreen mt-auto place-self-end">
       Learn More
     </p>
-  </a>
-</div>
+  </div>
+</a>
 {% else %}
 <p>There seems to be an issue with is information.
   We are working to solve this!

@@ -10,8 +10,12 @@
     <meta name="keywords" content="{{ tags }}" />
   </head>
   <body class="">
-    <header>{% include "_nav2.html" %}</header>
-    <main>{% block content %} {% endblock %}</main>
-    {% include "_footer.html" %}
+    <header>{% include "components/_nav2.html" %}</header>
+    <main>
+      {% block content %}
+      <!--  -->
+      {% endblock %}
+    </main>
+    {% include "components/_footer.html" %}
   </body>
 </html>

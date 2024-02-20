@@ -1,10 +1,16 @@
-{% extends 'layouts/base.html' %} {% set title = "Products & Services" %} {% set
-pageTitle = "Products & Services" %} {% set description = "" %} {% block content
-%}
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "Products & Services" %}
+<!--  -->
+{% set pageTitle = "Products & Services" %}
+<!--  -->
+{% set description = "" %}
+<!--  -->
+{% block content %}
 <section
   class="relative flex h-[350px] items-center bg-hero-image bg-cover bg-center bg-no-repeat"
 >
-  {% include 'layouts/image-title.html' %}
+  {% include 'components/_image-title.html' %}
 </section>
 <section class="bg-slightly-white py-24">
   <div class="container mx-auto px-10">

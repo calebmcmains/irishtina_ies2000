@@ -1,0 +1,78 @@
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "HVAC Duct Silencers & Vent Noise Silencers" %}
+<!--  -->
+{% set pageTitle = "HVAC Duct Silencers & Vent Noise Silencers" %}
+<!--  -->
+{% set description = "Vent silencers, blow-down silencers and louvers are ideal
+when noise suppression is needed for natural gas blow downs, gas turbine
+exhaust, steam ejectors and venting of high pressure gas into the atmosphere."
+%}
+<!--  -->
+{% block content %}
+
+<!-- IMAGE AND TITLE -->
+<section
+  class="relative flex h-[350px] items-center bg-[url('/public/images/page_headers/ies2000_silencers_louvers.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  {% include 'components/_image-title.html' %}
+</section>
+
+<!-- HVAC DUCT SILENCERS & VENT NOISE SILENCERS -->
+<section class="bg-slightly-white py-24">
+  <section class="container mx-auto max-w-screen-md px-10">
+    <div class="container m-auto">
+      <h2 class="main-header">HVAC Duct Silencers & Vent Noise Silencers</h2>
+      <div class="mb-8 text-neutral-500">
+        <p class="mb-6 leading-normal">
+          Air duct noise silencers are designed to provide maximum noise
+          reduction that can be obtained in a short depth. HVAC duct silencers
+          are used in installations such as mechanical equipment, fresh air
+          intakes for ventilation systems, processing air intakes, and cooling
+          tower inlets, exhausts, among others. Constructed with high
+          architectural standards, our louvers are available in 54 different
+          sizes. The vent noise silencers provide a wide range of
+          acoustical-performance and pressure-drop requirements.
+        </p>
+        <p class="mb-6 leading-normal">
+          Our HVAC silencers, Air duct noise silencers and louvers can be
+          combined with acoustic casing or screens. They are ideal for
+          situations that need low levels of air resistance, high degrees of
+          sound reduction, and have a limited installation depth. In addition,
+          the design of our louvers is discrete and abstract, meaning you can
+          integrate them into any architecture. We also have a wide range of
+          versions of HVAC duct silencers, Vent noise silencers and Air duct
+          noise silencers with several finishes available. You can also coat
+          them with your preferred RAL color.
+        </p>
+      </div>
+
+      <h4 class="subheader">Applications of Silencers and Louvers</h4>
+      <ul class="list-inside list-disc text-neutral-500">
+        <li class="mb-4">
+          The intake and exhaustion of internal combustion engines.
+        </li>
+        <li class="mb-4">
+          Venting of high-pressure gasses into the atmosphere.
+        </li>
+        <li class="mb-4">Natural gas blowdowns.</li>
+        <li class="mb-4">Process vents and start-gas.</li>
+        <li class="">Our louvers are used in gas turbine exhaust.</li>
+      </ul>
+
+      <div class="pb-3 pt-10">
+        <a
+          class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+          href="/public/pdf/ies2000datasheet-acousticblanketsrolls.pdf"
+          target="_blank"
+          rel="noopener"
+          >Download Product Brochure</a
+        >
+      </div>
+    </div>
+  </section>
+</section>
+
+{% include 'components/_want-help-contact-us.html' %}
+<!--  -->
+{% endblock %}

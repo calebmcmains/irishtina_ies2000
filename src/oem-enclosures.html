@@ -1,0 +1,63 @@
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "OEM Enclosures" %}
+<!--  -->
+{% set pageTitle = "OEM Enclosures" %}
+<!--  -->
+{% set description = "IES-2000, Inc. has the ability to design solutions for
+OEMs utilizing a variety of different products to ensure that their products
+will meet the required noise levels and maintain the aesthetics, access and
+functionality of the equipment for the end user." %}
+<!--  -->
+{% block content %}
+
+<!-- IMAGE AND TITLE -->
+<section
+  class="relative flex h-[350px] items-center bg-[url('/public/images/page_headers/ies2000_acoustic_enclosures.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  {% include 'components/_image-title.html' %}
+</section>
+
+<!-- OEM ENCLOSURES -->
+<section class="bg-slightly-white py-24">
+  <section class="container mx-auto max-w-screen-md px-10">
+    <div class="container m-auto">
+      <h2 class="main-header">OEM Enclosures</h2>
+      <div class="text-neutral-500">
+        <p class="mb-6 leading-normal">
+          IES-2000, Inc. offers comprehensive OEM solutions, harnessing a
+          diverse array of products to tailor noise control measures precisely
+          to client needs while preserving equipment aesthetics, accessibility,
+          and functionality. From crafting full enclosures to lining vehicle
+          cabs and compartments, and even providing custom wraps, IES-2000's
+          expertise spans the spectrum of noise mitigation strategies.
+        </p>
+        <p class="leading-normal">
+          What sets IES-2000 apart is its capacity to deliver turnkey solutions,
+          encompassing everything from initial design and acoustical engineering
+          to prototyping and seamless installation. The toolbox of solutions
+          includes a versatile range of products such as acoustical foam,
+          curtains, hard panel enclosures, dampening sheets, compounds, and
+          silencers, ensuring a tailored approach to each OEM's noise control
+          challenges. With a commitment to innovation and excellence, IES-2000
+          stands as a trusted partner in optimizing noise management for OEMs,
+          ensuring both performance and user satisfaction.
+        </p>
+      </div>
+
+      <div class="pb-3 pt-10">
+        <a
+          class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+          href="/public/pdf/ies2000datasheet-oemenclosures.pdf"
+          target="_blank"
+          rel="noopener"
+          >Download Product Brochure</a
+        >
+      </div>
+    </div>
+  </section>
+</section>
+
+{% include 'components/_want-help-contact-us.html' %}
+<!--  -->
+{% endblock %}

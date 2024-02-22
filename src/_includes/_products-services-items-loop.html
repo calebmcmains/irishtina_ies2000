@@ -1,0 +1,118 @@
+{% set items = [
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Acoustic Blankets & Rolls: Quilted Fiberglass",
+    description:
+      "Quilted fiberglass blankets and rolls are typically applied as acoustical liners or sound absorption panels. Acoustic blankets and rolls reduce the reflection of sound waves or reverberant noise energy within a piece of equipment, a room or a building.",
+    link: "/acoustic-blankets-rolls-quilted-fiberglass"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Acoustic Doors & Windows",
+    description:
+      "All of our Acousti-Door noise control doors and Acousti-Windows are manufactured to meet your unique needs and applications by noise control door specialists in the United States.",
+    link: "/acoustic-doors-and-acoustic-windows"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Acoustic Foams",
+    description:
+      "Acoustic foams are available in a variety of materials including composite, melamine and polyurethane providing high transmission loss, noise reduction and damping in a wide variety of applications.",
+    link: "/acoustic-foams"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Duct Lagging",
+    description:
+      "Duct lagging is typically used to wrap noisy pipes and ducts to help block the noise created by the contents moving through the pipes. Duct lagging can provide thermal insulation as well as noise reduction.",
+    link: "/duct-lagging"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Fabric Panels/Ceiling Products",
+    description:
+      "Wall Panels are the ideal solution for new construction or renovation in spaces with reverberant noise problems. Our lightweight custom panels can be easily installed on wall or ceiling applications, and are available in standard sizes or can be customized to meet specific design criteria.",
+    link: "/fabric-panels-ceiling-products"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "HVAC Duct Silencers & Vent Noise Silencers",
+    description:
+      "Vent silencers, blow-down silencers and louvers are ideal when noise suppression is needed for natural gas blow downs, gas turbine exhaust, steam ejectors and venting of high pressure gas into the atmosphere.",
+    link: "/silencers-louvers"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Industrial Noise Control Engineering",
+    description:
+      "IES-2000 has been assisting clients resolve their noise control issues with acoustical engineering for over 20 years, whether it is providing compliance with new equipment specifications pertaining to noise levels, feasibility studies, workplace noise exposure monitoring and community noise studies.",
+    link: "/industrial-noise-control-engineering"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Industrial Sound & Acoustic Barrier Curtains",
+    description:
+      "Barrier Walls are generally installed where a sound barrier is needed between a noise source and a target population. Whether indoor or out, absorptive noise control barriers provide maximum noise reduction with lightweight modular panels and/or louvers.",
+    link: "/acoustic-curtains"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "OEM Enclosures",
+    description:
+      "IES-2000, Inc. has the ability to design solutions for OEMs utilizing a variety of different products to ensure that their products will meet the required noise levels and maintain the aesthetics, access and functionality of the equipment for the end user.",
+    link: "/oem-enclosures"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Outdoor Sound Barrier Walls & Soundproof Panels",
+    description: "",
+    link: "/acoustic-outdoor-barrier-walls"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Outdoor Sound Curtains",
+    description:
+      "Our Outdoor Sound Curtains can be used for both active Construction Sites and for many different Community Noise situations. They can be used in conjunction with a chain link fence to surround a noisy area or to line a noisy building, and at IES-2000, we can design a solution to meet your design specifications.",
+    link: "/outdoor-sound-curtains"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Sound Proof & Acoustical Enclosures",
+    description:
+      "The IES-2000, Inc. modular system provide guaranteed acoustical performance and are easy to install, move or reconfigure. IES-2000, Inc. technical support personnel and representatives have the experience necessary to assist you in the design, supply and installation of your noise control solution.",
+    link: "/acoustical-enclosures"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Vibration Damping Sheets & Damping Compounds",
+    description:
+      "Damping sheets are self-adhesive pads used for sound and vibration damping on metal panels in applications including buses, railroad cars, ships, generator enclosures and hoppers. Damping compounds impart vibration damping in applications requiring superior flame and smoke resistant materials. ",
+    link: "/damping-sheets-compounds"
+  }
+]
+%}
+
+{% for item in items %}
+<a class="" href="{{item.link}}">
+  <div
+    class="relative flex min-h-96 transform flex-col items-start gap-4 rounded-lg bg-iesGreen-lightest p-6 drop-shadow-sm transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
+  >
+    <img
+      src="/public/images/{{item.image}}"
+      alt=""
+      class="h-36 w-full rounded-lg object-cover"
+    />
+    <div class="flex flex-col">
+      <h3 class="mb-2 text-2xl font-bold text-neutral-700">{{item.title}}</h3>
+      <p class="line-clamp-3 text-neutral-600">{{item.description}}</p>
+    </div>
+    <p class="text-right font-semibold uppercase text-iesGreen mt-auto place-self-end">
+      Learn More
+    </p>
+  </div>
+</a>
+{% else %}
+<p>There seems to be an issue with is information.
+  We are working to solve this!
+</p>
+{% endfor %}

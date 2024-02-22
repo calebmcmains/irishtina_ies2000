@@ -1,6 +1,8 @@
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/public/css/");
   eleventyConfig.addPassthroughCopy("src/public/images/");
+  eleventyConfig.addPassthroughCopy("src/public/pdf/");
   eleventyConfig.addPassthroughCopy("src/public/js/");
   eleventyConfig.addPassthroughCopy({
     "global.out.css": "global.css",

@@ -11,7 +11,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-image":
-          "url('/public/images/filip-barna-SlIu4D_rTPo-unsplash.jpg')",
+          "url('/public/images/page_headers/filip-barna-SlIu4D_rTPo-unsplash.jpg')",
       },
       scale: {
         1025: "1.025",

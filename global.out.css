@@ -838,6 +838,10 @@ table.tablesaw {
   float: right;
 }
 
+.float-left {
+  float: left;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -918,6 +922,14 @@ table.tablesaw {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
 }
 
 .line-clamp-3 {
@@ -1116,6 +1128,10 @@ table.tablesaw {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1309,8 +1325,16 @@ table.tablesaw {
   background-image: url('/public/images/page_headers/ies2000_acoustic_doors_windows.jpg');
 }
 
+.bg-\[url\(\'\/public\/images\/page_headers\/ies2000_acoustic_enclosures\.jpg\'\)\] {
+  background-image: url('/public/images/page_headers/ies2000_acoustic_enclosures.jpg');
+}
+
 .bg-\[url\(\'\/public\/images\/page_headers\/ies2000_acoustic_foams\.jpg\'\)\] {
   background-image: url('/public/images/page_headers/ies2000_acoustic_foams.jpg');
+}
+
+.bg-\[url\(\'\/public\/images\/page_headers\/ies2000_acoustic_outdoor_barrier_walls\.jpg\'\)\] {
+  background-image: url('/public/images/page_headers/ies2000_acoustic_outdoor_barrier_walls.jpg');
 }
 
 .bg-\[url\(\'\/public\/images\/page_headers\/ies2000_duct_lagging\.jpg\'\)\] {
@@ -1333,12 +1357,24 @@ table.tablesaw {
   background-image: url('/public/images/filip-barna-SlIu4D_rTPo-unsplash.jpg');
 }
 
-.bg-\[url\(\'\/public\/images\/page_headers\/ies2000_acoustic_enclosures\.jpg\'\)\] {
-  background-image: url('/public/images/page_headers/ies2000_acoustic_enclosures.jpg');
+.bg-\[url\(\'\/public\/images\/page_headers\/ies2000_acoustic_curtains2\.jpg\'\)\] {
+  background-image: url('/public/images/page_headers/ies2000_acoustic_curtains2.jpg');
 }
 
-.bg-\[url\(\'\/public\/images\/page_headers\/ies2000_acoustic_outdoor_barrier_walls\.jpg\'\)\] {
-  background-image: url('/public/images/page_headers/ies2000_acoustic_outdoor_barrier_walls.jpg');
+.bg-\[url\(\'\/public\/images\/page_headers\/ies2000_acoustic_enclosures2\.jpg\'\)\] {
+  background-image: url('/public/images/page_headers/ies2000_acoustic_enclosures2.jpg');
+}
+
+.bg-\[url\(\'\/public\/images\/page_headers\/ies2000_ies2000_damping_sheets\.jpg\'\)\] {
+  background-image: url('/public/images/page_headers/ies2000_ies2000_damping_sheets.jpg');
+}
+
+.bg-\[url\(\'\/public\/images\/page_headers\/ies2000_damping_sheets\.jpg\'\)\] {
+  background-image: url('/public/images/page_headers/ies2000_damping_sheets.jpg');
+}
+
+.bg-\[url\(\'\/public\/images\/page_headers\/ies2000_outdoor_sound_curtains\.jpg\'\)\] {
+  background-image: url('/public/images/page_headers/ies2000_outdoor_sound_curtains.jpg');
 }
 
 .from-black {
@@ -1504,6 +1540,10 @@ table.tablesaw {
   padding-top: 6rem;
 }
 
+.pe-10 {
+  padding-inline-end: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1632,6 +1672,12 @@ table.tablesaw {
   opacity: 0.5;
 }
 
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -1641,12 +1687,6 @@ table.tablesaw {
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2007,32 +2047,28 @@ table.tablesaw {
     grid-row-start: 3;
   }
 
-  .sm\:ms-auto {
-    margin-inline-start: auto;
-  }
-
   .sm\:mb-0 {
     margin-bottom: 0px;
+  }
+
+  .sm\:ms-auto {
+    margin-inline-start: auto;
   }
 
   .sm\:grid {
     display: grid;
   }
 
-  .sm\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:flex-row {
-    flex-direction: row;
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .sm\:gap-3 {
-    gap: 0.75rem;
+  .sm\:flex-row {
+    flex-direction: row;
   }
 
   .sm\:gap-4 {

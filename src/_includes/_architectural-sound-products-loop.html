@@ -1,0 +1,70 @@
+{% set items = [
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Acoustical Doors",
+    description:
+      "We distribute factory-assembled Acousti-Doors that insulate sound within your space without impeding their ability to act as efficient entryways.",
+    link: "/acoustic-doors-and-acoustic-windows"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Acoustical Windows",
+    description:
+      "We supply factory-assembled Acousti-Windows in both fixed-frame or split-frame configurations, and we can also tailor the liner panels, glazing, and glass stops to your application's needs.",
+    link: "/acoustic-doors-and-acoustic-windows"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Baffles",
+    description:
+      "We offer ceiling baffles in a variety of colors and designs that can reduce ambient noise up to 10 dB. These lightweight, self-supporting sheets come with FDA approval and provide optimal acoustic environments over the entire reverberant area.",
+    link: "/fabric-panels-ceiling-products"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Banners",
+    description:
+      "Our standard and sailcloth sound-absorption banners come in a variety of colors and designs. Our sailcloth banners come with NRC ratings of 11.0 per 4' x 2' banner as well as ASTM E84 Class A ratings.",
+    link: "/fabric-panels-ceiling-products"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Ceiling Tiles",
+    description:
+      "We provide up to 30 different sound-proofing ceiling tiles from brands including SONEX, SQUARELINE, and WoodTrends and from materials including wood, metal, and plastic.",
+    link: "/fabric-panels-ceiling-products"
+  },
+  {
+    image: "ies2000_architectural_sound.jpg",
+    title: "Wall Panels/Decorative Panels",
+    description:
+      "We custom design and install many types of fabric wall panels to reduce reverberant noise in internal environments. These Class A fire-rated panels can be installed either during or after initial construction, and they come in a wide selection of finishes, color options, and fabrics.",
+    link: "/fabric-panels-ceiling-products"
+  }
+]
+%}
+
+{% for item in items %}
+<a class="" href="{{item.link}}">
+  <div
+    class="relative flex min-h-96 transform flex-col items-start gap-4 rounded-lg bg-iesGreen-lightest p-6 drop-shadow-sm transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
+  >
+    <img
+      src="/public/images/{{item.image}}"
+      alt=""
+      class="h-36 w-full rounded-lg object-cover"
+    />
+    <div class="flex flex-col">
+      <h3 class="mb-2 text-2xl font-bold text-neutral-700">{{item.title}}</h3>
+      <p class="line-clamp-3 text-neutral-600">{{item.description}}</p>
+    </div>
+    <p class="text-right font-semibold uppercase text-iesGreen mt-auto place-self-end">
+      Learn More
+    </p>
+  </div>
+</a>
+{% else %}
+<p>There seems to be an issue with is information.
+  We are working to solve this!
+</p>
+{% endfor %}

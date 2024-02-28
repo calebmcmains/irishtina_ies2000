@@ -1184,6 +1184,10 @@ table.tablesaw {
   gap: 2rem;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
 .space-x-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -1297,12 +1301,21 @@ table.tablesaw {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-iesGreen-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(97 196 110 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
 }
 
 .bg-\[url\(\'\/public\/images\/ies2000_ceiling_products\.jpg\'\)\] {
   background-image: url('/public/images/ies2000_ceiling_products.jpg');
+}
+
+.bg-\[url\(\'\/public\/images\/page_headers\/filip-barna-SlIu4D_rTPo-unsplash\.jpg\'\)\] {
+  background-image: url('/public/images/page_headers/filip-barna-SlIu4D_rTPo-unsplash.jpg');
 }
 
 .bg-\[url\(\'\/public\/images\/page_headers\/ies2000_acoustic_blankets\.jpg\'\)\] {
@@ -1357,12 +1370,16 @@ table.tablesaw {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.bg-hero-image {
-  background-image: url('/public/images/page_headers/filip-barna-SlIu4D_rTPo-unsplash.jpg');
+.bg-\[url\(\'\/public\/images\/page_headers\/ies2000_industrial_noise_control_products\.jpg\'\)\] {
+  background-image: url('/public/images/page_headers/ies2000_industrial_noise_control_products.jpg');
 }
 
-.bg-\[url\(\'\/public\/images\/page_headers\/filip-barna-SlIu4D_rTPo-unsplash\.jpg\'\)\] {
-  background-image: url('/public/images/page_headers/filip-barna-SlIu4D_rTPo-unsplash.jpg');
+.bg-\[url\(\'\/public\/images\/page_headers\/ies2000_architectural_sound_products\.jpg\'\)\] {
+  background-image: url('/public/images/page_headers/ies2000_architectural_sound_products.jpg');
+}
+
+.bg-\[url\(\'\/public\/images\/page_headers\/ies2000_construction_outdoor_noise_control_products\.jpg\'\)\] {
+  background-image: url('/public/images/page_headers/ies2000_construction_outdoor_noise_control_products.jpg');
 }
 
 .from-black {
@@ -1486,6 +1503,11 @@ table.tablesaw {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
 }
 
 .pb-1 {
@@ -2111,6 +2133,11 @@ table.tablesaw {
 
   .md\:gap-8 {
     gap: 2rem;
+  }
+
+  .md\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .md\:text-center {

@@ -1,0 +1,59 @@
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "Architectural Sound Products" %}
+<!--  -->
+{% set pageTitle = "Architectural Sound Products" %}
+<!--  -->
+{% set description = "" %}
+<!--  -->
+{% block content %}
+<section
+  class="relative flex h-[350px] items-center bg-[url('/public/images/page_headers/ies2000_architectural_sound_products.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  {% include 'components/_image-title.html' %}
+</section>
+<section class="bg-slightly-white py-24">
+  <div class="container mx-auto px-10">
+    <div class="container m-auto mb-20 md:text-center">
+      <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
+        >Applciation</span
+      >
+      <h2 class="mb-8 text-4xl font-bold text-neutral-700">
+        Architectural Sound Products
+      </h2>
+      <div class="m-auto max-w-screen-md text-neutral-500">
+        <p class="mb-6 leading-normal">
+          IES-2000 provides a full range of architectural sound products
+          designed to create acoustically balanced indoor and outdoor spaces.
+          Our products see wide use in the construction and architectural
+          acoustic design fields, and architects across America rely on us to
+          create quality sound solutions for a variety of projects.
+        </p>
+        <p class="leading-normal">
+          We offer products designed to enhance the acoustics of any
+          architectural application. Depending on their intended use, our
+          products can create acoustically balanced internal and external
+          spaces.
+        </p>
+      </div>
+    </div>
+    <div
+      class="mx-auto grid max-w-screen-xl grid-cols-1 items-center gap-8 md:grid-cols-2 xl:grid-cols-3"
+    >
+      {% include "_architectural-sound-products-loop.html" %}
+    </div>
+  </div>
+</section>
+<section class="bg-iesGreen-lightest py-24">
+  <div class="container mx-auto px-10 md:text-center">
+    <h2 class="mb-8 text-4xl font-bold text-neutral-700">
+      Aren't sure which products & services you need?
+    </h2>
+    <a
+      class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+      href="/contact-us"
+      >Contact us</a
+    >
+  </div>
+</section>
+{% endblock %}

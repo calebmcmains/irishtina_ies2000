@@ -1,0 +1,87 @@
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "Industrial Noise Control & Reduction" %}
+<!--  -->
+{% set pageTitle = "Industrial Noise Control & Reduction" %}
+<!--  -->
+{% set description = "" %}
+<!--  -->
+{% block content %}
+<section
+  class="relative flex h-[350px] items-center bg-[url('/public/images/page_headers/ies2000_industrial_noise_control_products.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  {% include 'components/_image-title.html' %}
+</section>
+<section class="bg-slightly-white py-24">
+  <div class="container mx-auto px-10">
+    <div class="container m-auto mb-20 md:text-center">
+      <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
+        >Applciation</span
+      >
+      <h2 class="mb-8 text-4xl font-bold text-neutral-700">
+        Industrial Noise Control & Reduction
+      </h2>
+      <div class="m-auto max-w-screen-md text-neutral-500">
+        <p class="mb-6 leading-normal">
+          IES-2000 provides industrial noise control & reduction solutions for
+          excessive sound and vibrations in facilities across the manufacturing
+          spectrum. Our industrial noise reduction products have a proven track
+          record of success, meeting customer defined goals in industries
+          including:
+        </p>
+        <div
+          class="mb-6 flex flex-wrap items-center justify-center gap-2 md:px-20"
+        >
+          <span
+            class="rounded-full bg-iesGreen-light px-4 py-2 text-slightly-white"
+            >Agriculture</span
+          >
+          <span
+            class="rounded-full bg-iesGreen-light px-4 py-2 text-slightly-white"
+            >Automotive</span
+          >
+          <span
+            class="rounded-full bg-iesGreen-light px-4 py-2 text-slightly-white"
+            >Aerospace</span
+          >
+          <span
+            class="rounded-full bg-iesGreen-light px-4 py-2 text-slightly-white"
+            >Lumber</span
+          >
+          <span
+            class="rounded-full bg-iesGreen-light px-4 py-2 text-slightly-white"
+            >Chemical Processing</span
+          >
+          <span
+            class="rounded-full bg-iesGreen-light px-4 py-2 text-slightly-white"
+            >Plastics Assembly</span
+          >
+        </div>
+        <p class="leading-normal">
+          We offer a wide range of industrial noise control products designed to
+          help mitigate harmful room acoustics. All our noise reduction products
+          include customization capabilities that ensure customers find an exact
+          fit for their needs.
+        </p>
+      </div>
+    </div>
+    <div
+      class="mx-auto grid max-w-screen-xl grid-cols-1 items-center gap-8 md:grid-cols-2 xl:grid-cols-3"
+    >
+      {% include "_industrial-noise-control-products-loop.html" %}
+    </div>
+  </div>
+</section>
+<section class="bg-iesGreen-lightest py-24">
+  <div class="container mx-auto px-10 md:text-center">
+    <h2 class="mb-8 text-4xl font-bold text-neutral-700">
+      Aren't sure which products & services you need?
+    </h2>
+    <a
+      class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+      href="/contact-us"
+      >Contact us</a
+    >
+  </div>
+</section>
+{% endblock %}

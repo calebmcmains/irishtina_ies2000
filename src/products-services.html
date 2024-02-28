@@ -14,7 +14,7 @@
 </section>
 <section class="bg-slightly-white py-24">
   <div class="container mx-auto px-10">
-    <div class="container m-auto mb-24 px-10 md:text-center">
+    <div class="container m-auto mb-24 md:text-center">
       <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
         >Your covered</span
       >
@@ -23,20 +23,22 @@
       </h2>
     </div>
     <div
-      class="mx-auto mb-24 grid max-w-screen-xl grid-cols-1 items-center gap-8 md:grid-cols-2 xl:grid-cols-3"
+      class="mx-auto grid max-w-screen-xl grid-cols-1 items-center gap-8 md:grid-cols-2 xl:grid-cols-3"
     >
       {% include "_products-services-items-loop.html" %}
     </div>
-    <div class="container m-auto px-10 md:text-center">
-      <h2 class="mb-8 text-4xl font-bold text-neutral-700">
-        Aren't sure which products & services you need?
-      </h2>
-      <a
-        class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
-        href="/contact-us"
-        >Contact us</a
-      >
-    </div>
+  </div>
+</section>
+<section class="bg-iesGreen-lightest py-24">
+  <div class="container mx-auto px-10 md:text-center">
+    <h2 class="mb-8 text-4xl font-bold text-neutral-700">
+      Aren't sure which products & services you need?
+    </h2>
+    <a
+      class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+      href="/contact-us"
+      >Contact us</a
+    >
   </div>
 </section>
 {% endblock %}

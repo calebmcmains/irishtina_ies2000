@@ -1,0 +1,68 @@
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "Construction/Outdoor Noise Control & Reduction" %}
+<!--  -->
+{% set pageTitle = "Construction/Outdoor Noise Control & Reduction" %}
+<!--  -->
+{% set description = "" %}
+<!--  -->
+{% block content %}
+<section
+  class="relative flex h-[350px] items-center bg-[url('/public/images/page_headers/ies2000_construction_outdoor_noise_control_products.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  {% include 'components/_image-title.html' %}
+</section>
+<section class="bg-slightly-white py-24">
+  <div class="container mx-auto px-10">
+    <div class="container m-auto mb-20 md:text-center">
+      <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
+        >Applciation</span
+      >
+      <h2 class="mb-8 text-4xl font-bold text-neutral-700">
+        Construction/Outdoor Noise Control & Reduction
+      </h2>
+      <div class="m-auto max-w-screen-md text-neutral-500">
+        <p class="mb-6 leading-normal">
+          IES-2000 offers a wide range of noise-control products that reduce
+          noise pollution in outdoor construction operations. We carefully
+          design each of our outdoor construction soundproofing and
+          noise-control products to help customers meet their noise-control
+          goals. Our focus on customer service ensures that our clients have
+          support throughout the entire project to keep all processes running
+          smoothly.
+        </p>
+        <p class="mb-6 leading-normal">
+          OSHA, ANSI, and many state regulatory bodies have put forth
+          regulations to ensure that construction companies control noise
+          pollution at construction sites. Measures must be taken to conserve
+          the hearing of construction workers and any others affected by noise
+          generated from a construction site.
+        </p>
+        <p class="leading-normal">
+          IES 2000 offers a wide range of standard products to help outdoor
+          construction operations combat noise pollution. We also possess the
+          capability to design and engineer custom solutions for your
+          noise-control issues.
+        </p>
+      </div>
+    </div>
+    <div
+      class="mx-auto grid max-w-screen-xl grid-cols-1 items-center gap-8 md:grid-cols-2 xl:grid-cols-3"
+    >
+      {% include "_construction-outdoor-noise-control-products-loop.html" %}
+    </div>
+  </div>
+</section>
+<section class="bg-iesGreen-lightest py-24">
+  <div class="container mx-auto px-10 md:text-center">
+    <h2 class="mb-8 text-4xl font-bold text-neutral-700">
+      Aren't sure which products & services you need?
+    </h2>
+    <a
+      class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+      href="/contact-us"
+      >Contact us</a
+    >
+  </div>
+</section>
+{% endblock %}

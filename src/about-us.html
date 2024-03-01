@@ -1,0 +1,120 @@
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "About us" %}
+<!--  -->
+{% set pageTitle = "About us" %}
+<!--  -->
+{% set description = "" %}
+<!--  -->
+{% block content %}
+<section
+  class="relative flex h-[350px] items-center bg-[url('/public/images/page_headers/ies2000_about_us.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  {% include 'components/_image-title.html' %}
+</section>
+<section class="bg-slightly-white py-24">
+  <div class="container mx-auto px-10">
+    <div class="container m-auto md:text-center">
+      <h2 class="mb-8 text-4xl font-bold text-neutral-700">About us</h2>
+      <div class="m-auto max-w-screen-md text-neutral-500">
+        <p class="mb-6 leading-normal">
+          IES-2000 is a nationwide organization with the capabilities of solving
+          all of your Noise Control Problems. We have the abilities to design
+          and engineer operator and maintenance friendly solutions to your Noise
+          Control Problems. We bring years of application engineering and Noise
+          Control engineering abilities for total Turn-Key Project and the most
+          up to date methods and solutions for your Noise Control Problems.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          <span
+            class="rounded-full bg-iesGreen-light px-4 py-2 text-slightly-white"
+            >Engineering</span
+          >
+          <span
+            class="rounded-full bg-iesGreen-light px-4 py-2 text-slightly-white"
+            >Sales</span
+          >
+          <span
+            class="rounded-full bg-iesGreen-light px-4 py-2 text-slightly-white"
+            >Installation</span
+          >
+          <span
+            class="rounded-full bg-iesGreen-light px-4 py-2 text-slightly-white"
+            >Fabrication</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-iesGreen-lightest py-24">
+  <div class="container mx-auto px-10">
+    <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
+      <div>
+        <h3 class="mb-2 text-2xl font-bold text-neutral-700">Industrial</h3>
+        <p class="text-neutral-600">
+          Acoustical Curtains, Acoustical Enclosures/Modular Systems, Composite,
+          Melamine, Polyurethane Acoustic Foams, Acoustical Doors, Acoustical
+          Windows, Industrial Duct Lagging, Silencers & Louvers
+        </p>
+      </div>
+      <div>
+        <h3 class="mb-2 text-2xl font-bold text-neutral-700">Architechtural</h3>
+        <p class="text-neutral-600">
+          Baffles, Banners, Ceiling Tiles, Acoustical Doors, Acoustical Windows,
+          Wall Panels/Decorative Panels
+        </p>
+      </div>
+      <div>
+        <h3 class="mb-2 text-2xl font-bold text-neutral-700">Services</h3>
+        <p class="text-neutral-600">
+          Architectural Engineering & Design Services, Industrial Engineering &
+          Design Services, Noise Surveys
+        </p>
+      </div>
+      <div>
+        <h3 class="mb-2 text-2xl font-bold text-neutral-700">OEM Products</h3>
+        <p class="text-neutral-600">
+          IES-2000, Inc. has the ability to design solutions for OEMs utilizing
+          a variety of different products to ensure that their products will
+          meet the required noise levels and maintain the aesthetics, access and
+          functionality of the equipment for the end user.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-slightly-white py-24">
+  <div class="container mx-auto px-10 md:text-center">
+    <h2 class="text mb-8 font-bold uppercase text-neutral-500">
+      Proud Memebrs of
+    </h2>
+    <div class="flex justify-around">
+      <img
+        class="grayscale filter"
+        src="/public/images/ies2000_isn.png"
+        alt=""
+      />
+      <img
+        class="grayscale filter"
+        src="/public/images/ies2000_ariba.png"
+        alt=""
+      />
+    </div>
+  </div>
+</section>
+<section class="bg-iesGreen-lightest py-24">
+  <div class="container mx-auto px-10 md:text-center">
+    <h2 class="mb-8 text-4xl font-bold text-neutral-700">
+      We would love to connect with you!
+    </h2>
+    <a
+      class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+      href="/contact-us"
+      >Contact us</a
+    >
+  </div>
+</section>
+{% endblock %}

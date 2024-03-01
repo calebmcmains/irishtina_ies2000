@@ -1,0 +1,293 @@
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "Case Studies" %}
+<!--  -->
+{% set pageTitle = "Case Studies" %}
+<!--  -->
+{% set description = "" %}
+<!--  -->
+{% block content %}
+
+<!-- IMAGE AND TITLE -->
+<section
+  class="relative flex h-[350px] items-center bg-[url('/public/images/page_headers/ies2000_case_studies.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  {% include 'components/_image-title.html' %}
+</section>
+
+<!-- CASE STUDIES -->
+<section class="bg-slightly-white py-24">
+  <section class="container mx-auto max-w-screen-md px-10">
+    <div class="container m-auto">
+      <h2 class="main-header">Case Studies</h2>
+      <div class="text-neutral-500">
+        <p class="leading-normal">
+          At IES2000, we're driven by a passion for perfect sound. Our expertise
+          lies in sculpting spaces where every note sings and every word is
+          crystal clear. But what truly fuels our excitement is the chance to
+          collaborate. Whether it's architects, artists, or innovators, we
+          thrive on working together to create unforgettable sonic experiences.
+          Let's craft something extraordinary, together.
+        </p>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- OUR WORK -->
+<section class="bg-iesGreen-lightest py-24">
+  <section class="container mx-auto max-w-screen-md px-10">
+    <div class="container m-auto">
+      <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
+        >Our Work</span
+      >
+      <h2 class="text-4xl font-bold text-neutral-700">
+        Every project gets 110%
+      </h2>
+    </div>
+  </section>
+</section>
+
+<!-- ABB - "THE NOISY NEIGHBOR" -->
+<section class="bg-slightly-white py-24">
+  <section class="container mx-auto max-w-screen-xl px-10">
+    <div class="container m-auto">
+      <div class="flex flex-col gap-8 lg:flex-row lg:gap-16">
+        <div class="basis-7/12">
+          <h3 class="secondary-header">ABB - The "Noisy Neighbor"</h3>
+
+          <blockquote class="mb-6 text-xl font-semibold italic">
+            "These acoustical gates exceeded our expectations for aesthetics,
+            functionality and performance." <span>- Client</span>
+          </blockquote>
+          <p class="mb-8 leading-normal text-neutral-500">
+            When ABB Power Systems had problems with noise levels at their Ocean
+            City, Maryland installation, they were battling several factors.
+            Noise above community ordinance levels was unacceptable, and ABB
+            also had to contend with high winds at the location as well as
+            ensuring the gates met security standards. ABB began searching for a
+            supplier who could address the entire situation and provide a
+            turn-key solution: design, engineer, craft and install a full
+            solution that addressed all factors…..and ABB found IES-2000. We
+            were able to design an automated sliding gate system that would
+            withstand 140 MPH winds and operate in winds up to 75 MPH. ABB
+            approved our designs, and the foundations were poured. The gate
+            installation took our crew 5 weeks to complete from start to finish.
+            The community noise ordinance required the site to comply to 65
+            dB(A) during the daytime hours and 55 dB(A) levels during nighttime
+            hours. After the installation levels were below 45 dB(A) in all
+            locations. IES-2000's solution provided a 15-17 dB(A) reduction from
+            the louvered gates ABB had at the site originally.
+          </p>
+
+          <!-- FEATURES -->
+          <div class="">
+            <h4 class="subheader">Features</h4>
+            <div class="text-neutral-500">
+              <ul class="list-inside list-disc text-neutral-500">
+                <li class="mb-4">Designed for 130 MPH wind load</li>
+                <li class="mb-4">Gates will operate in winds up 75 MPH</li>
+                <li class="mb-4">Utilizes STC 44 sound panels</li>
+                <li class="">Meet community noise ordinance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex basis-5/12 flex-col justify-around gap-8">
+          <div class="relative">
+            <div
+              class="absolute bottom-0 left-0 right-0 top-0 -z-0 rounded-lg bg-gradient-to-t from-[rgba(0,0,0,0.6)] to-transparent"
+            ></div>
+            <img
+              class="w-full rounded-lg"
+              width="750px"
+              height="460px"
+              src="/public/images/case_studies/ies2000_abb_original.jpg"
+              alt="original gate for ABB that was not up to city code"
+            />
+            <span class="absolute bottom-0 z-10 p-4 text-sm text-slightly-white"
+              >Original installation: Met security and wind requirements, but
+              was outside of city ordinances for noise control.</span
+            >
+          </div>
+
+          <div class="relative">
+            <div
+              class="absolute bottom-0 left-0 right-0 top-0 -z-0 rounded-lg bg-gradient-to-t from-[rgba(0,0,0,0.6)] to-transparent"
+            ></div>
+            <img
+              class="w-full rounded-lg"
+              width="400px"
+              height="245px"
+              src="/public/images/case_studies/ies2000_abb_new.jpg"
+              alt="new gate build by IES2000 for ABB meets all requirments"
+            />
+            <span class="absolute bottom-0 z-10 p-4 text-sm text-slightly-white"
+              >IES-2000 installation: designed, engineered and installed a gate
+              system that met ALL requirements for security, wind control and
+              noise suppression.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- MITIGATING NOISY WATER PUMPS FOR MILITARY APPLICATION -->
+<section class="bg-iesGreen-lightest py-24">
+  <section class="container mx-auto max-w-screen-xl px-10">
+    <div class="container m-auto">
+      <div class="flex flex-col gap-8 lg:flex-row lg:gap-16">
+        <div class="basis-7/12">
+          <h3 class="secondary-header">
+            Mitigating Noisy Water Pumps for Military Application
+          </h3>
+
+          <blockquote class="mb-6 text-xl font-semibold italic">
+            "The pump covers provided the noise reduction and durability
+            required for field operations." <span>- Client</span>
+          </blockquote>
+          <p class="mb-8 leading-normal text-neutral-500">
+            A pump manufacturer approached IES-2000 to design a solution to
+            reduce noise being emitted from its water pump. The pump was
+            emitting 98 dB(A), but noise reduction required this application to
+            be less than 85 dB(A) at 3 feet. The unit was also required to be
+            durable, easily removable, and collapsible to minimize storage
+            space. IES-2000 had a pump sent to our factory so we could create a
+            prototype unit. The pump required intake and exhaust ventilation
+            baffles. The exhaust baffle was designed utilizing BA-13 with
+            silicone facing to handle the heat. Two holes were created for
+            piping, a flap was required for accessing the pull start as well as
+            a flap required for re-fueling. Handles for removing the unit were
+            added and the cover was labeled as specified. The cover designed by
+            IES-2000 created a noise reduction of 13 dB(A). We also, developed a
+            non-acoustic version of this cover using an 8-ounce canvas for
+            applications that did not have the noise level requirement.
+          </p>
+
+          <!-- FEATURES -->
+          <div class="">
+            <h4 class="subheader">Features</h4>
+            <div class="text-neutral-500">
+              <ul class="list-inside list-disc text-neutral-500">
+                <li class="mb-4">
+                  Ventilation baffles for air intake and exhaust
+                </li>
+                <li class="mb-4">Handles for easier carrying</li>
+                <li class="mb-4">Collapsible design for easier storage</li>
+                <li class="">Ease of access via specially designed flaps</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex basis-5/12 flex-col justify-around gap-8">
+          <div class="relative">
+            <div
+              class="absolute bottom-0 left-0 right-0 top-0 -z-0 rounded-lg bg-gradient-to-t from-[rgba(0,0,0,0.6)] to-transparent"
+            ></div>
+            <img
+              class="w-full rounded-lg"
+              width="268px"
+              height="201px"
+              src="/public/images/case_studies/ies2000_cranepump.jpg"
+              alt="crane poump with a sound dampening cover"
+            />
+            <span class="absolute bottom-0 z-10 p-4 text-sm text-slightly-white"
+              >Noise reducing pump cover featuring ventilation baffles and
+              flaps. Color: Olive Drab</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- PLASMA SPRAYING OPERATION SILENCED WITH NOISE CONTROL SUITE -->
+<section class="bg-slightly-white py-24">
+  <section class="container mx-auto max-w-screen-xl px-10">
+    <div class="container m-auto">
+      <div class="flex flex-col gap-8 lg:flex-row lg:gap-16">
+        <div class="basis-7/12">
+          <h3 class="secondary-header">
+            Plasma Spraying Operation Silenced with Noise Control Suite
+          </h3>
+
+          <blockquote class="mb-6 text-xl font-semibold italic">
+            "The noise reduction for these booths were between 35-44 dB(A)!"
+            <span>- Client</span>
+          </blockquote>
+          <p class="mb-8 leading-normal text-neutral-500">
+            IES-2000 was contacted by IGS about our ability to reduce noise
+            being emitted from their thermal spraying operations in their new
+            headquarters. IGS had two thermal spray applications in their
+            Production Area and one in the Test Lab that would require reducing
+            the noise levels from 118-125 dB(A) to below 85 dB(A). The booth for
+            the Test Lab was a 12’ x 12’ x 8’ high with a double door and large
+            viewing window. The booths in the Production Area were combined into
+            a suite to save floor space. The overall size was 42’ x 58’ x 10’
+            and 8’ high. The design included two large double doors, one 6070
+            double door, two 3070 single doors and windows. All windows received
+            a pull down shade with weld tint for safety. The customer reported
+            sound level readings of 81-83 dB(A) after all of the booths were
+            installed while all thermal spray units were operating. The noise
+            reduction for these booths obtained a 35-44 dB(A) reduction. The
+            panels used on this project were rated as an STC 42 paired with STC
+            50 doors and windows. All necessary openings for duct work,
+            electrical and other components were accommodated and sealed to
+            maximize noise reduction.
+          </p>
+
+          <!-- FEATURES -->
+          <div class="mb-8">
+            <h4 class="subheader">Features</h4>
+            <div class="text-neutral-500">
+              <ul class="list-inside list-disc text-neutral-500">
+                <li class="mb-4">4” thick powder coated panels</li>
+                <li class="mb-4">Large Double doors for equipment access</li>
+                <li class="mb-4">Weld Tint for Windows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex basis-5/12 flex-col justify-around gap-8">
+          <div class="relative">
+            <div
+              class="absolute bottom-0 left-0 right-0 top-0 -z-0 rounded-lg bg-gradient-to-t from-[rgba(0,0,0,0.6)] to-transparent"
+            ></div>
+            <img
+              class="w-full rounded-lg"
+              width="300px"
+              height="184px"
+              src="/public/images/case_studies/ies2000_igs_exterior.jpg"
+              alt="exterior view of plasma spraying chamber"
+            />
+            <span class="absolute bottom-0 z-10 p-4 text-sm text-slightly-white"
+              >Exterior view of the production area booth</span
+            >
+          </div>
+          <div class="relative">
+            <div
+              class="absolute bottom-0 left-0 right-0 top-0 -z-0 rounded-lg bg-gradient-to-t from-[rgba(0,0,0,0.6)] to-transparent"
+            ></div>
+            <img
+              class="w-full rounded-lg"
+              width="300px"
+              height="184px"
+              src="/public/images/case_studies/ies2000_igs_interior.jpg"
+              alt="interior view of plasma spraying chamber"
+            />
+            <span class="absolute bottom-0 z-10 p-4 text-sm text-slightly-white"
+              >Interior view of the production area booth</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+
+{% include 'components/_want-help-contact-us.html' %}
+<!--  -->
+{% endblock %}

@@ -1,34 +1,39 @@
 {% set items = [
   {
-    image: "ies2000_architectural_sound.jpg",
+    image: "ies2000_acoustic_doors.jpg",
+    imgAlt: "acoustic door",
     title: "Acoustical Doors",
     description:
       "We distribute factory-assembled Acousti-Doors that insulate sound within your space without impeding their ability to act as efficient entryways.",
     link: "/acoustic-doors-and-acoustic-windows"
   },
   {
-    image: "ies2000_architectural_sound.jpg",
+    image: "ies2000_acoustic_window.jpg",
+    imgAlt: "acoustic window",
     title: "Acoustical Windows",
     description:
       "We supply factory-assembled Acousti-Windows in both fixed-frame or split-frame configurations, and we can also tailor the liner panels, glazing, and glass stops to your application's needs.",
     link: "/acoustic-doors-and-acoustic-windows"
   },
   {
-    image: "ies2000_architectural_sound.jpg",
+    image: "ies2000_ceiling_products.jpg",
+    imgAlt: "acoustic ceilting tiles",
     title: "Baffles",
     description:
       "We offer ceiling baffles in a variety of colors and designs that can reduce ambient noise up to 10 dB. These lightweight, self-supporting sheets come with FDA approval and provide optimal acoustic environments over the entire reverberant area.",
     link: "/fabric-panels-ceiling-products"
   },
   {
-    image: "ies2000_architectural_sound.jpg",
+    image: "ies2000_acoustic_banners.jpg",
+    imgAlt: "acoustic banner",
     title: "Banners",
     description:
       "Our standard and sailcloth sound-absorption banners come in a variety of colors and designs. Our sailcloth banners come with NRC ratings of 11.0 per 4' x 2' banner as well as ASTM E84 Class A ratings.",
     link: "/fabric-panels-ceiling-products"
   },
   {
-    image: "ies2000_architectural_sound.jpg",
+    image: "ies2000_ceiling_tiles.jpg",
+    imgAlt: "acoustic celing tiles",
     title: "Ceiling Tiles",
     description:
       "We provide up to 30 different sound-proofing ceiling tiles from brands including SONEX, SQUARELINE, and WoodTrends and from materials including wood, metal, and plastic.",
@@ -36,6 +41,7 @@
   },
   {
     image: "ies2000_architectural_sound.jpg",
+    imgAlt: "acoustic wall panel",
     title: "Wall Panels/Decorative Panels",
     description:
       "We custom design and install many types of fabric wall panels to reduce reverberant noise in internal environments. These Class A fire-rated panels can be installed either during or after initial construction, and they come in a wide selection of finishes, color options, and fabrics.",
@@ -50,8 +56,8 @@
     class="relative flex min-h-96 transform flex-col items-start gap-4 rounded-lg bg-iesGreen-lightest p-6 drop-shadow-sm transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
   >
     <img
-      src="/public/images/{{item.image}}"
-      alt=""
+      src="/public/images/products/{{item.image}}"
+      alt="{{image.imgAlt}}"
       class="h-36 w-full rounded-lg object-cover"
     />
     <div class="flex flex-col">

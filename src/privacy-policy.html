@@ -1,0 +1,152 @@
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "Privacy Policy" %}
+<!--  -->
+{% set pageTitle = "Privacy Policy" %}
+<!--  -->
+{% set description = "Our privacy policy ensures the protection and
+confidentiality of your personal information. We are committed to transparently
+outlining how we collect, use, and safeguard your data, providing peace of mind
+as you engage with our services and products." %}
+<!--  -->
+{% block content %}
+
+<!-- IMAGE & TITLE -->
+<section
+  class="relative flex h-[400px] items-center bg-[url('/public/images/page_headers/ies2000_privacy_policy.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  {% include 'components/_image-title.html' %}
+</section>
+
+<!-- PRIVACY POLICY -->
+<section class="bg-slightly-white py-24">
+  <div class="container mx-auto max-w-screen-md px-10">
+    <div class="container m-auto md:text-center">
+      <h2 class="mb-8 text-4xl font-bold text-neutral-700">Privacy Policy</h2>
+      <div class="m-auto text-neutral-500">
+        <p class="leading-normal">
+          IES 2000 respects your privacy and the purpose for which our site
+          visitors provide us information. We do not share, sell, or rent any of
+          the information collected to any third parties and do not intend to do
+          so in the future.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POLICIES -->
+<section class="bg-slightly-white py-24">
+  <div class="container mx-auto max-w-screen-md px-10">
+    <div class="">
+      <div class="mb-8">
+        <h4 class="subheader">Information Collected</h4>
+        <p class="leading-normal text-neutral-500">
+          If you request or submit information to us by sending an e-mail via
+          the “mail to:” function or filling out a “contact” form, we may save
+          your e-mail address as well as any other information you may provide.
+          This information may be used to contact you in the future by mail,
+          e-mail, or phone to convey information about our solutions or services
+          that we feel may benefit you. Your e-mail and other information you
+          provide will not be sold to any third party.
+        </p>
+      </div>
+      <div class="mb-8">
+        <h4 class="subheader">Information Collected by others</h4>
+        <p class="leading-normal text-neutral-500">
+          This notice addresses only the policy of IES 2000’s website and not
+          sites that users access via links from our site. IES 2000 is not
+          responsible for the information collection policies of other sites,
+          nor for the practices employed by websites linked to or from our
+          website, nor for the information or content contained therein. Often
+          links to other websites are provided solely as pointers to information
+          on topics that may be useful to our visitors. Users are advised to
+          review the privacy policy of other websites.
+        </p>
+      </div>
+      <div class="mb-8">
+        <h4 class="subheader">Cookies</h4>
+        <p class="leading-normal text-neutral-500">
+          IES 2000 website does not use cookies. Updating, Correcting, and
+          Deleting Personal Information If you would like to have your personal
+          information removed from our records, please send an e-mail with
+          “Remove personal information” in the subject line.
+        </p>
+      </div>
+      <div class="mb-8">
+        <h4 class="subheader">Legally Compelled Disclosure of Information</h4>
+        <p class="leading-normal text-neutral-500">
+          IES 2000 may disclose information when legally compelled to do so; in
+          other words, when we, in good faith, believe that the law requires it
+          or for the protection of our legal rights.
+        </p>
+      </div>
+      <div class="mb-16">
+        <h4 class="subheader">Periodic Policy Changes</h4>
+        <p class="leading-normal text-neutral-500">
+          Please note that IES 2000 reviews its privacy practices from
+          time-to-time (i.e. to track technology and/or legal changes), and that
+          these practices are subject to change. To ensure continuing
+          familiarity with the most current version of our privacy policy,
+          please bookmark and periodically review this page.
+        </p>
+      </div>
+      <div class="mb-16">
+        <p class="leading-normal text-neutral-500">
+          This policy statement is made in the name of IES 2000 and is effective
+          as of February 25, 2019. This statement does not create an agreement
+          between IES 2000 and users, and as such, does not create any legal
+          rights for any party.
+        </p>
+      </div>
+      <div>
+        <menu
+          class="row-start-5 flex flex-col sm:col-start-3 sm:row-start-2 lg:col-start-2 lg:row-auto"
+        >
+          <p class="mb-6 font-bold text-neutral-700">Contact Us</p>
+          <li class="mb-4 text-neutral-500">
+            <address class="font-noraml">
+              <strong>IES2000</strong><br />
+              PO Box 770 <br />
+              St. Paris, OH 43072
+            </address>
+          </li>
+          <div>
+            <li class="text-neutral-500">
+              Phone:
+              <a class="underline" href="tel:+18772488640">(877) 248-8640</a>
+            </li>
+            <li class="text-neutral-500">Fax: (937) 663-0678</li>
+            <li class="text-neutral-500">
+              Email:
+              <a class="underline" href="mailto:info@ies2000.com"
+                >info@ies2000.com</a
+              >
+            </li>
+            <li class="text-neutral-500">
+              Website:
+              <a class="underline" href="https://ies2000.com"
+                >https://www.ies2000.com</a
+              >
+            </li>
+          </div>
+        </menu>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WE WOULD LOVE TO CONNECT WITH YOU -->
+<section class="bg-iesGreen-lightest py-24">
+  <div class="container mx-auto px-10 md:text-center">
+    <h2 class="mb-8 text-4xl font-bold text-neutral-700">
+      Have questions regarding our privacy policy!
+    </h2>
+    <a
+      class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+      href="/contact-us"
+      >Contact us</a
+    >
+  </div>
+</section>
+{% endblock %}

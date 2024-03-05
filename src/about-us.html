@@ -4,14 +4,18 @@
 <!--  -->
 {% set pageTitle = "About us" %}
 <!--  -->
-{% set description = "" %}
+{% set description = "IES2000 About us" %}
 <!--  -->
 {% block content %}
+
+<!-- IMAGE & TITLE -->
 <section
-  class="relative flex h-[350px] items-center bg-[url('/public/images/page_headers/ies2000_about_us.jpg')] bg-cover bg-center bg-no-repeat"
+  class="relative flex h-[400px] items-center bg-[url('/public/images/page_headers/ies2000_about_us.jpg')] bg-cover bg-center bg-no-repeat"
 >
   {% include 'components/_image-title.html' %}
 </section>
+
+<!-- ABOUT US -->
 <section class="bg-slightly-white py-24">
   <div class="container mx-auto px-10">
     <div class="container m-auto md:text-center">
@@ -48,6 +52,7 @@
   </div>
 </section>
 
+<!-- CATEGORIES -->
 <section class="bg-iesGreen-lightest py-24">
   <div class="container mx-auto px-10">
     <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
@@ -86,6 +91,7 @@
   </div>
 </section>
 
+<!-- PROUD MEMEBERS OF -->
 <section class="bg-slightly-white py-24">
   <div class="container mx-auto px-10 md:text-center">
     <h2 class="text mb-8 font-bold uppercase text-neutral-500">
@@ -105,6 +111,8 @@
     </div>
   </div>
 </section>
+
+<!-- WE WOULD LOVE TO CONNECT WITH YOU -->
 <section class="bg-iesGreen-lightest py-24">
   <div class="container mx-auto px-10 md:text-center">
     <h2 class="mb-8 text-4xl font-bold text-neutral-700">

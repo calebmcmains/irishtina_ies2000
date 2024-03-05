@@ -4,14 +4,22 @@
 <!--  -->
 {% set pageTitle = "Products & Services" %}
 <!--  -->
-{% set description = "" %}
+{% set description = "Discover our comprehensive range of cutting-edge products
+and services designed to address diverse acoustic challenges. From innovative
+sound barrier walls to customized noise control solutions, we offer expertise
+and technology to enhance acoustic comfort and tranquility in any environment."
+%}
 <!--  -->
 {% block content %}
+
+<!-- IMAGE & TITLE -->
 <section
-  class="relative flex h-[350px] items-center bg-[url('/public/images/page_headers/filip-barna-SlIu4D_rTPo-unsplash.jpg')] bg-cover bg-center bg-no-repeat"
+  class="relative flex h-[400px] items-center bg-[url('/public/images/page_headers/ies2000_products.jpg')] bg-cover bg-center bg-no-repeat"
 >
   {% include 'components/_image-title.html' %}
 </section>
+
+<!-- PRODUCTS -->
 <section class="bg-slightly-white py-24">
   <div class="container mx-auto px-10">
     <div class="container m-auto mb-24 md:text-center">
@@ -29,6 +37,8 @@
     </div>
   </div>
 </section>
+
+<!-- CONTACT US -->
 <section class="bg-iesGreen-lightest py-24">
   <div class="container mx-auto px-10 md:text-center">
     <h2 class="mb-8 text-4xl font-bold text-neutral-700">

@@ -3,10 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" href="public/favicons/favicon.png" />
+    <link
+      rel="apple-touch-icon"
+      type="image/png"
+      href="public/favicons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+
     <link rel="stylesheet" href="/global.css" />
     <link rel="stylesheet" href="/public/css/custom.min.css" />
     <title>IES2000 Home</title>
-    <meta name="description" content="" />
+    <meta name="description" content="Acoustical Consultants: IES2000, reliable acoustic
+engineering services company with over 20 years of experience and capabilities
+of solving all noise control problems. Inquire now." />
     <meta name="keywords" content="" />
   </head>
   <body class="">
@@ -276,16 +287,16 @@
             >
               <li class="cursor-pointer rounded-xl hover:bg-iesGreen-lightest">
                 <a
-                  href="/media-library"
+                  href="/photo-gallery"
                   class="inline-flex whitespace-nowrap px-4 py-2 text-base font-semibold hover:text-black"
-                  >Photo Galleries</a
+                  >Photo Gallery</a
                 >
               </li>
               <li class="cursor-pointer rounded-xl hover:bg-iesGreen-lightest">
                 <a
                   href="/sitemap"
                   class="inline-flex whitespace-nowrap px-4 py-2 text-base font-semibold hover:text-black"
-                  >Site Map</a
+                  >Sitemap</a
                 >
               </li>
             </menu>
@@ -454,10 +465,10 @@
                 >
                 <menu class="space-y-4 px-6 py-4 font-semibold">
                   <li>
-                    <a href="/media-library" class="pb-1">Photo Galleries</a>
+                    <a href="/photo-gallery" class="pb-1">Photo Gallery</a>
                   </li>
                   <li>
-                    <a href="/sitemap" class="pb-1">Site Map</a>
+                    <a href="/sitemap" class="pb-1">Sitemap</a>
                   </li>
                 </menu>
               </li>
@@ -472,13 +483,28 @@
     <main>
       
 
+<!-- HERO -->
 <section
-  class="relative flex h-[700px] items-center bg-[url('/public/images/page_headers/filip-barna-SlIu4D_rTPo-unsplash.jpg')] bg-cover bg-center bg-no-repeat"
+  class="relative flex h-[500px] items-center overflow-hidden md:h-[700px]"
 >
   <div
-    class="absolute bottom-0 left-0 right-0 top-0 -z-0 bg-gradient-to-r from-black to-transparent"
+    class="absolute bottom-0 left-0 right-0 top-0 z-[2] bg-gradient-to-r from-black to-transparent"
   ></div>
-  <div class="container z-[1] m-auto px-10">
+
+  <video
+    id="vid"
+    autoplay
+    loop
+    muted
+    class="absolute w-auto min-w-full max-w-none"
+    poster="/public/images/page_headers/filip-barna-SlIu4D_rTPo-unsplash.jpg"
+  >
+    <source
+      src="/public/images/page_headers/ies2000_hero_video.mp4"
+      type="video/mp4"
+    />
+  </video>
+  <div class="container z-[3] m-auto px-10">
     <div class="bg-opacity-30 py-24 text-center xl:text-left">
       <div class="w-full xl:w-1/2">
         <h1
@@ -511,6 +537,8 @@
     </div>
   </div>
 </section>
+
+<!-- 3 WAYS TO UNDERSTAND SOUND CONTROL -->
 <section class="bg-slightly-white py-24">
   <div class="container m-auto mb-24 px-10 md:text-center">
     <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
@@ -523,7 +551,7 @@
   <div
     class="container m-auto grid w-auto grid-cols-1 gap-16 px-10 md:w-2/3 xl:w-1/3"
   >
-    <div>
+    <div class="me-20">
       <p class="mb-2 text-7xl font-bold text-iesGreen opacity-50">01</p>
       <h3 class="mb-6 text-3xl font-bold text-neutral-700">
         Source / Receiver
@@ -535,7 +563,7 @@
       </p>
     </div>
 
-    <div>
+    <div class="ml-20">
       <p class="mb-2 text-7xl font-bold text-iesGreen opacity-50">02</p>
       <h3 class="mb-6 text-3xl font-bold text-neutral-700">Path</h3>
       <p class="text-neutral-600">
@@ -545,7 +573,7 @@
       </p>
     </div>
 
-    <div>
+    <div class="me-20">
       <p class="mb-2 text-7xl font-bold text-iesGreen opacity-50">03</p>
       <h3 class="mb-6 text-3xl font-bold text-neutral-700">Room Acoustics</h3>
       <p class="text-neutral-600">
@@ -558,6 +586,8 @@
     </div>
   </div>
 </section>
+
+<!-- FEATURED PRODUCTS -->
 <section class="bg-iesGreen-lightest py-24">
   <div class="container m-auto mb-24 px-10">
     <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
@@ -574,7 +604,7 @@
       class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
-        src="/public/images/ies2000_acoustic_enclosure.jpeg"
+        src="/public/images/ies2000_acoustic_enclosure.jpg"
         alt=""
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
@@ -592,7 +622,7 @@
       class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
-        src="/public/images/ies2000_acoustic_window.jpeg"
+        src="/public/images/ies2000_acoustic_window.jpg"
         alt=""
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
@@ -609,7 +639,7 @@
       class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
-        src="/public/images/ies2000_architectural_sound.jpeg"
+        src="/public/images/ies2000_architectural_sound.jpg"
         alt=""
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
@@ -626,7 +656,7 @@
       class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
-        src="/public/images/ies2000_outdoor_indoor_construction_noise_control.jpeg"
+        src="/public/images/ies2000_outdoor_indoor_construction_noise_control.jpg"
         alt=""
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
@@ -643,7 +673,7 @@
       class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
-        src="/public/images/ies2000_industrial_noise_control.jpeg"
+        src="/public/images/ies2000_industrial_noise_control.jpg"
         alt=""
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
@@ -664,6 +694,8 @@
     >
   </div>
 </section>
+
+<!-- INDUSTRIES -->
 <section class="bg-slightly-white py-24">
   <div class="container m-auto mb-24 px-10 md:text-center">
     <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
@@ -808,7 +840,7 @@
         </div>
         <div class="mt-auto">
           <span class="text-xs"
-            >Copyright © 2024 by IES2000, <br />
+            >Copyright © <span id="year">2024</span> by IES2000, <br />
             All rights reserved.</span
           >
         </div>
@@ -930,7 +962,7 @@
         <p class="mb-8 font-bold text-neutral-700">Company</p>
         <menu class="flex flex-col gap-4">
           <li class="text-sm text-neutral-600">
-            <a href="/architectural-sound-products">About Us</a>
+            <a href="/about-us">About Us</a>
           </li>
           <li class="text-sm text-neutral-600">
             <a href="/case-studies">Case Studies</a>
@@ -947,10 +979,10 @@
         <p class="mb-8 font-bold text-neutral-700">Resources</p>
         <menu class="flex flex-col gap-4">
           <li class="text-sm text-neutral-600">
-            <a href="/media-library">Photo Galleries</a>
+            <a href="/photo-gallery">Photo Gallery</a>
           </li>
           <li class="text-sm text-neutral-600">
-            <a href="/sitmap">Site Map</a>
+            <a href="/sitemap">Sitemap</a>
           </li>
         </menu>
       </menu>
@@ -958,5 +990,6 @@
   </div>
 </footer>
 
+    <script src="/public/js/updateyear.js"></script>
   </body>
 </html>

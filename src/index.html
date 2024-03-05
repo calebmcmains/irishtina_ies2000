@@ -2,17 +2,34 @@
 <!--  -->
 {% set title = "IES2000 Home" %}
 <!--  -->
-{% set description = "" %}
+{% set description = "Acoustical Consultants: IES2000, reliable acoustic
+engineering services company with over 20 years of experience and capabilities
+of solving all noise control problems. Inquire now." %}
 <!--  -->
 {% block content %}
 
+<!-- HERO -->
 <section
-  class="relative flex h-[700px] items-center bg-[url('/public/images/page_headers/filip-barna-SlIu4D_rTPo-unsplash.jpg')] bg-cover bg-center bg-no-repeat"
+  class="relative flex h-[500px] items-center overflow-hidden md:h-[700px]"
 >
   <div
-    class="absolute bottom-0 left-0 right-0 top-0 -z-0 bg-gradient-to-r from-black to-transparent"
+    class="absolute bottom-0 left-0 right-0 top-0 z-[2] bg-gradient-to-r from-black to-transparent"
   ></div>
-  <div class="container z-[1] m-auto px-10">
+
+  <video
+    id="vid"
+    autoplay
+    loop
+    muted
+    class="absolute w-auto min-w-full max-w-none"
+    poster="/public/images/page_headers/filip-barna-SlIu4D_rTPo-unsplash.jpg"
+  >
+    <source
+      src="/public/images/page_headers/ies2000_hero_video.mp4"
+      type="video/mp4"
+    />
+  </video>
+  <div class="container z-[3] m-auto px-10">
     <div class="bg-opacity-30 py-24 text-center xl:text-left">
       <div class="w-full xl:w-1/2">
         <h1
@@ -45,6 +62,8 @@
     </div>
   </div>
 </section>
+
+<!-- 3 WAYS TO UNDERSTAND SOUND CONTROL -->
 <section class="bg-slightly-white py-24">
   <div class="container m-auto mb-24 px-10 md:text-center">
     <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
@@ -57,7 +76,7 @@
   <div
     class="container m-auto grid w-auto grid-cols-1 gap-16 px-10 md:w-2/3 xl:w-1/3"
   >
-    <div>
+    <div class="me-20">
       <p class="mb-2 text-7xl font-bold text-iesGreen opacity-50">01</p>
       <h3 class="mb-6 text-3xl font-bold text-neutral-700">
         Source / Receiver
@@ -69,7 +88,7 @@
       </p>
     </div>
 
-    <div>
+    <div class="ml-20">
       <p class="mb-2 text-7xl font-bold text-iesGreen opacity-50">02</p>
       <h3 class="mb-6 text-3xl font-bold text-neutral-700">Path</h3>
       <p class="text-neutral-600">
@@ -79,7 +98,7 @@
       </p>
     </div>
 
-    <div>
+    <div class="me-20">
       <p class="mb-2 text-7xl font-bold text-iesGreen opacity-50">03</p>
       <h3 class="mb-6 text-3xl font-bold text-neutral-700">Room Acoustics</h3>
       <p class="text-neutral-600">
@@ -92,6 +111,8 @@
     </div>
   </div>
 </section>
+
+<!-- FEATURED PRODUCTS -->
 <section class="bg-iesGreen-lightest py-24">
   <div class="container m-auto mb-24 px-10">
     <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
@@ -108,7 +129,7 @@
       class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
-        src="/public/images/ies2000_acoustic_enclosure.jpeg"
+        src="/public/images/ies2000_acoustic_enclosure.jpg"
         alt=""
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
@@ -126,7 +147,7 @@
       class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
-        src="/public/images/ies2000_acoustic_window.jpeg"
+        src="/public/images/ies2000_acoustic_window.jpg"
         alt=""
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
@@ -143,7 +164,7 @@
       class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
-        src="/public/images/ies2000_architectural_sound.jpeg"
+        src="/public/images/ies2000_architectural_sound.jpg"
         alt=""
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
@@ -160,7 +181,7 @@
       class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
-        src="/public/images/ies2000_outdoor_indoor_construction_noise_control.jpeg"
+        src="/public/images/ies2000_outdoor_indoor_construction_noise_control.jpg"
         alt=""
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
@@ -177,7 +198,7 @@
       class="transform transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
     >
       <img
-        src="/public/images/ies2000_industrial_noise_control.jpeg"
+        src="/public/images/ies2000_industrial_noise_control.jpg"
         alt=""
         class="mb-4 h-48 w-full rounded-lg object-cover"
       />
@@ -198,6 +219,8 @@
     >
   </div>
 </section>
+
+<!-- INDUSTRIES -->
 <section class="bg-slightly-white py-24">
   <div class="container m-auto mb-24 px-10 md:text-center">
     <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"

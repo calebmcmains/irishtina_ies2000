@@ -1,0 +1,32 @@
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "Newsletter Archive" %}
+<!--  -->
+{% set pageTitle = "Newsletter Archive" %}
+<!--  -->
+{% set description = "IES2000 Newsletter Archive" %}
+<!--  -->
+{% block content %}
+
+<!-- IMAGE AND TITLE -->
+<section
+  class="relative flex h-[400px] items-center bg-[url('/public/images/page_headers/ies2000_privacy_policy.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  {% include 'components/_image-title.html' %}
+</section>
+
+<!-- TRADSHOWS -->
+<section class="bg-slightly-white py-24">
+  <section class="container mx-auto max-w-screen-md px-10">
+    <div class="container m-auto">
+      <h2 class="main-header">Newsletter Archive</h2>
+      <div class="text-neutral-500">
+        <p class="leading-normal">Future home of archived newsletters.</p>
+      </div>
+    </div>
+  </section>
+</section>
+
+{% include 'components/_want-help-contact-us.html' %}
+<!--  -->
+{% endblock %}

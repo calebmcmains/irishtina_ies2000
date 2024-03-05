@@ -1,0 +1,163 @@
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "Photo Gallery" %}
+<!--  -->
+{% set pageTitle = "Photo Gallery" %}
+<!--  -->
+{% set description = "Discover our comprehensive range of cutting-edge products
+and services designed to address diverse acoustic challenges. From innovative
+sound barrier walls to customized noise control solutions, we offer expertise
+and technology to enhance acoustic comfort and tranquility in any environment."
+%}
+<!--  -->
+{% block content %}
+
+<!-- IMAGE & TITLE -->
+<section
+  class="relative flex h-[400px] items-center bg-[url('/public/images/page_headers/ies2000_photo_gallery.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  {% include 'components/_image-title.html' %}
+</section>
+
+<!-- PRODUCTS -->
+<section class="bg-slightly-white py-24">
+  <div class="container mx-auto px-10">
+    <div class="container m-auto mb-24 md:text-center">
+      <span class="mb-[5rem] text-base font-bold uppercase text-iesGreen"
+        >Photos</span
+      >
+      <h2 class="text-4xl font-bold text-neutral-700">
+        Browse a wide variety of the work we've done
+      </h2>
+    </div>
+    <div
+      class="mx-auto grid max-w-screen-xl grid-cols-1 items-center gap-8 md:grid-cols-2 xl:grid-cols-3"
+    >
+      <a class="" href="/">
+        <div
+          class="relative flex min-h-80 transform flex-col items-start gap-4 rounded-lg bg-iesGreen-lightest p-6 drop-shadow-sm transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
+        >
+          <img
+            src="/public/images/page_headers/ies2000_case_studies.jpg"
+            alt="older church worship center"
+            class="h-36 w-full rounded-lg object-cover"
+          />
+          <div class="flex flex-col">
+            <h3 class="mb-2 text-2xl font-bold text-neutral-700">
+              Architectural Products
+            </h3>
+          </div>
+          <p class="mt-auto text-right font-semibold uppercase text-iesGreen">
+            View Gallery
+          </p>
+        </div>
+      </a>
+      <a class="" href="/">
+        <div
+          class="relative flex min-h-80 transform flex-col items-start gap-4 rounded-lg bg-iesGreen-lightest p-6 drop-shadow-sm transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
+        >
+          <img
+            src="/public/images/products/ies2000_duct_lagging.jpg"
+            alt="duct lagging"
+            class="h-36 w-full rounded-lg object-cover"
+          />
+          <div class="flex flex-col">
+            <h3 class="mb-2 text-2xl font-bold text-neutral-700">
+              Duct Lagging
+            </h3>
+          </div>
+          <p class="mt-auto text-right font-semibold uppercase text-iesGreen">
+            View Gallery
+          </p>
+        </div>
+      </a>
+      <a class="" href="/">
+        <div
+          class="relative flex min-h-80 transform flex-col items-start gap-4 rounded-lg bg-iesGreen-lightest p-6 drop-shadow-sm transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
+        >
+          <img
+            src="/public/images/products/ies2000_silencers_louvers.jpg"
+            alt="acoustic silencers"
+            class="h-36 w-full rounded-lg object-cover"
+          />
+          <div class="flex flex-col">
+            <h3 class="mb-2 text-2xl font-bold text-neutral-700">Silencers</h3>
+          </div>
+          <p class="mt-auto text-right font-semibold uppercase text-iesGreen">
+            View Gallery
+          </p>
+        </div>
+      </a>
+      <a class="" href="/">
+        <div
+          class="relative flex min-h-80 transform flex-col items-start gap-4 rounded-lg bg-iesGreen-lightest p-6 drop-shadow-sm transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
+        >
+          <img
+            src="/public/images/case_studies/ies2000_abb_new.jpg"
+            alt="acoustic tan gate"
+            class="h-36 w-full rounded-lg object-cover"
+          />
+          <div class="flex flex-col">
+            <h3 class="mb-2 text-2xl font-bold text-neutral-700">
+              Outdoor / Construction / Pipeline
+            </h3>
+          </div>
+          <p class="mt-auto text-right font-semibold uppercase text-iesGreen">
+            View Gallery
+          </p>
+        </div>
+      </a>
+      <a class="" href="/">
+        <div
+          class="relative flex min-h-80 transform flex-col items-start gap-4 rounded-lg bg-iesGreen-lightest p-6 drop-shadow-sm transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
+        >
+          <img
+            src="/public/images/case_studies/ies2000_cranepump.jpg"
+            alt="crane pumb curtain"
+            class="h-36 w-full rounded-lg object-cover"
+          />
+          <div class="flex flex-col">
+            <h3 class="mb-2 text-2xl font-bold text-neutral-700">Curtains</h3>
+          </div>
+          <p class="mt-auto text-right font-semibold uppercase text-iesGreen">
+            View Gallery
+          </p>
+        </div>
+      </a>
+      <a class="" href="/">
+        <div
+          class="relative flex min-h-80 transform flex-col items-start gap-4 rounded-lg bg-iesGreen-lightest p-6 drop-shadow-sm transition-all duration-200 ease-in-out hover:scale-1025 hover:cursor-pointer"
+        >
+          <img
+            src="/public/images/ies2000_test_chamber_case1.jpg"
+            alt="test chamber acousticly sound"
+            class="h-36 w-full rounded-lg object-cover"
+          />
+          <div class="flex flex-col">
+            <h3 class="mb-2 text-2xl font-bold text-neutral-700">
+              Noise Control Enclosures
+            </h3>
+          </div>
+          <p class="mt-auto text-right font-semibold uppercase text-iesGreen">
+            View Gallery
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT US -->
+<section class="bg-iesGreen-lightest py-24">
+  <div class="container mx-auto px-10 md:text-center">
+    <h2 class="mb-8 text-4xl font-bold text-neutral-700">
+      Aren't sure which products & services you need?
+    </h2>
+    <a
+      class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+      href="/contact-us"
+      >Contact us</a
+    >
+  </div>
+</section>
+{% endblock %}

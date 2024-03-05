@@ -1,0 +1,53 @@
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "Tradeshows" %}
+<!--  -->
+{% set pageTitle = "Tradeshows" %}
+<!--  -->
+{% set description = "IES2000 Tradeshows" %}
+<!--  -->
+{% block content %}
+
+<!-- IMAGE AND TITLE -->
+<section
+  class="relative flex h-[400px] items-center bg-[url('/public/images/page_headers/ies2000_tradeshows.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  {% include 'components/_image-title.html' %}
+</section>
+
+<!-- TRADSHOWS -->
+<section class="bg-slightly-white py-24">
+  <section class="container mx-auto max-w-screen-md px-10">
+    <div class="container m-auto">
+      <h2 class="main-header">Tradeshows</h2>
+      <div class="text-neutral-500">
+        <p class="leading-normal">
+          At IES2000, our enthusiasm for acoustic engineering is palpable in
+          every aspect of our work. We're not just about showcasing our latest
+          innovations at the tradeshow; we're eager to engage with fellow
+          enthusiasts and professionals who share our passion. Come experience
+          the energy and expertise that drives us as we demonstrate our
+          commitment to advancing the field of sound technology. Join us at the
+          tradeshow and immerse yourself in a world where innovation meets
+          passion.
+        </p>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- UPCOMING -->
+<section class="bg-slightly-white py-24">
+  <section class="container mx-auto max-w-screen-md px-10">
+    <div class="container m-auto">
+      <h2 class="main-header">Upcoming Events</h2>
+      <div class="text-neutral-500">
+        <p class="leading-normal">Coming soon.</p>
+      </div>
+    </div>
+  </section>
+</section>
+
+{% include 'components/_want-help-contact-us.html' %}
+<!--  -->
+{% endblock %}

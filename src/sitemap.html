@@ -1,0 +1,217 @@
+{% extends 'layouts/base.html' %}
+<!--  -->
+{% set title = "Sitemap" %}
+<!--  -->
+{% set pageTitle = "Sitemap" %}
+<!--  -->
+{% set description = "IES2000 Sitemap Page" %}
+<!--  -->
+{% block content %}
+
+<!-- IMAGE & TITLE -->
+<section
+  class="relative flex h-[400px] items-center bg-[url('/public/images/page_headers/ies2000_privacy_policy.jpg')] bg-cover bg-center bg-no-repeat"
+>
+  {% include 'components/_image-title.html' %}
+</section>
+
+<!-- SITEMAP -->
+<section class="bg-slightly-white py-24">
+  <div class="container mx-auto max-w-screen-md px-10">
+    <div class="container m-auto md:text-center">
+      <h2 class="text-4xl font-bold text-neutral-700">Sitemap</h2>
+    </div>
+  </div>
+</section>
+
+<!-- SITEMAP LINKS -->
+<section class="bg-slightly-white pb-24">
+  <div class="container mx-auto max-w-screen-md px-10">
+    <div class="container m-auto">
+      <menu class="">
+        <li class="pb-4">
+          <a
+            href="/"
+            class="whitespace-nowrap pb-1 font-semibold hover:text-iesGreen-light"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/products-services"
+            class="whitespace-nowrap pb-1 font-semibold hover:text-iesGreen-light"
+            >Products & Services</a
+          >
+          <menu class="space-y-4 px-6 py-4 font-semibold">
+            <li>
+              <a
+                href="/acoustic-blankets-rolls-quilted-fiberglass"
+                class="pb-1 hover:text-iesGreen-light"
+                >Acoustic Blankets & Rolls: Quilted Fiberglass</a
+              >
+            </li>
+            <li>
+              <a
+                href="/acoustic-doors-and-acoustic-windows"
+                class="pb-1 hover:text-iesGreen-light"
+                >Acoustic Doors & Windows</a
+              >
+            </li>
+            <li>
+              <a href="/acoustic-foams" class="pb-1 hover:text-iesGreen-light"
+                >Acoustic Foams</a
+              >
+            </li>
+            <li>
+              <a href="/duct-lagging" class="pb-1 hover:text-iesGreen-light"
+                >Duct Lagging</a
+              >
+            </li>
+            <li>
+              <a
+                href="/fabric-panels-ceiling-products"
+                class="pb-1 hover:text-iesGreen-light"
+                >Fabric Panels/Ceiling Products</a
+              >
+            </li>
+            <li>
+              <a
+                href="/silencers-louvers"
+                class="pb-1 hover:text-iesGreen-light"
+                >HVAC Duct Silencers & Vent Noise Silencers</a
+              >
+            </li>
+            <li>
+              <a
+                href="/industrial-noise-control-engineering"
+                class="pb-1 hover:text-iesGreen-light"
+                >Industrial Noise Control Engineering</a
+              >
+            </li>
+            <li>
+              <a
+                href="/acoustic-curtains"
+                class="pb-1 hover:text-iesGreen-light"
+                >Industrial Sound & Acoustic Barrier Curtains</a
+              >
+            </li>
+            <li>
+              <a href="/oem-enclosures" class="pb-1 hover:text-iesGreen-light"
+                >OEM Enclosures</a
+              >
+            </li>
+            <li>
+              <a
+                href="/acoustic-outdoor-barrier-walls"
+                class="pb-1 hover:text-iesGreen-light"
+                >Outdoor Sound Barrier Walls & Soundproof Panels</a
+              >
+            </li>
+            <li>
+              <a
+                href="/outdoor-sound-curtains"
+                class="pb-1 hover:text-iesGreen-light"
+                >Outdoor Sound Curtains</a
+              >
+            </li>
+            <li>
+              <a
+                href="/acoustical-enclosures"
+                class="pb-1 hover:text-iesGreen-light"
+                >Sound Proof & Acoustical Enclosures</a
+              >
+            </li>
+            <li>
+              <a
+                href="/damping-sheets-compounds"
+                class="pb-1 hover:text-iesGreen-light"
+                >Vibration Damping Sheets & Damping Compounds</a
+              >
+            </li>
+          </menu>
+        </li>
+        <li>
+          <div class="whitespace-nowrap pb-1 font-semibold">By Application</div>
+          <menu class="space-y-4 px-6 py-4 font-semibold">
+            <li>
+              <a
+                href="/architectural-sound-products"
+                class="pb-1 hover:text-iesGreen-light"
+                >Architectural Sound & Acoustics</a
+              >
+            </li>
+            <li>
+              <a
+                href="/construction-outdoor-noise-control-products"
+                class="pb-1 hover:text-iesGreen-light"
+                >Construction/Outdoor Noise Control & Reduction</a
+              >
+            </li>
+            <li>
+              <a
+                href="/industrial-noise-control-products"
+                class="pb-1 hover:text-iesGreen-light"
+                >Industrial Noise Control & Reduction</a
+              >
+            </li>
+          </menu>
+        </li>
+        <li>
+          <div class="whitespace-nowrap pb-1 font-semibold">Company</div>
+          <menu class="space-y-4 px-6 py-4 font-semibold">
+            <li>
+              <a href="/about-us" class="pb-1 hover:text-iesGreen-light"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="/case-studies" class="pb-1 hover:text-iesGreen-light"
+                >Case Studies</a
+              >
+            </li>
+            <li>
+              <a href="/tradeshows" class="pb-1 hover:text-iesGreen-light"
+                >Tradeshows</a
+              >
+            </li>
+            <li>
+              <a href="/privacy-policy" class="pb-1 hover:text-iesGreen-light"
+                >Privacy Policy</a
+              >
+            </li>
+          </menu>
+        </li>
+        <li>
+          <div class="whitespace-nowrap pb-1 font-semibold">Resources</div>
+          <menu class="space-y-4 px-6 py-4 font-semibold">
+            <li>
+              <a href="/photo-gallery" class="pb-1 hover:text-iesGreen-light"
+                >Photo Gallery</a
+              >
+            </li>
+            <li>
+              <a href="/sitemap" class="pb-1 hover:text-iesGreen-light"
+                >Sitemap</a
+              >
+            </li>
+          </menu>
+        </li>
+      </menu>
+    </div>
+  </div>
+</section>
+
+<!-- WE WOULD LOVE TO CONNECT WITH YOU -->
+<section class="bg-iesGreen-lightest py-24">
+  <div class="container mx-auto px-10 md:text-center">
+    <h2 class="mb-8 text-4xl font-bold text-neutral-700">
+      Not finding what you are looking for?
+    </h2>
+    <a
+      class="rounded-full bg-iesGreen px-6 py-3 text-slightly-white transition-all duration-200 ease-out hover:bg-iesGreen-light"
+      href="/contact-us"
+      >Contact us</a
+    >
+  </div>
+</section>
+{% endblock %}
